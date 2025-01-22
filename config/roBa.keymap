@@ -121,10 +121,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans           &kp LC(T)  &trans       &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &kp LS(LC(TAB))  &kp LC(W)  &kp LC(TAB)  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans           &trans     &trans       &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans           &trans     &trans       &trans  &trans      &trans  &trans                                &trans
+&trans  &trans           &kp LC(T)  &trans       &trans                      &trans  &trans             &trans             &trans             &trans
+&trans  &kp LS(LC(TAB))  &kp LC(W)  &kp LC(TAB)  &trans  &trans      &trans  &trans  &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &trans
+&trans  &trans           &trans     &trans       &trans  &trans      &trans  &trans  &trans             &trans             &trans             &trans
+&trans  &trans           &trans     &trans       &trans  &trans      &trans  &trans                                                           &trans
             >;
         };
 
