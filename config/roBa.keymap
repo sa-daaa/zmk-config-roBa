@@ -6,7 +6,6 @@
 #define MOUSE 4
 
 &sl { release-after-ms = <250>; }; // ダブルクリックに必要な時間を設定
-
 / {
     macros {
         mkp_exit_AML: mkp_exit_AML {
@@ -32,11 +31,6 @@
 
 #define SCROLL 5
 #define NUM 6
-
-&mt {
-    flavor = "balanced";
-    quick-tap-ms = <0>;
-};
 
 / {
     combos {
@@ -69,12 +63,6 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
     };
 
     behaviors {
@@ -99,7 +87,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 LANG_HANJA  &lt 2 SPACE  &lt_to_layer_0 3 LANG_HANGEUL      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         symbols {
