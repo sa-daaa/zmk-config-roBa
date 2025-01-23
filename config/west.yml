@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: Arai-yt
-      url-base: https://github.com/Arai-yt
+    - name: kumakey-git
+      url-base: https://github.com/kumakey-git
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: Arai-yt
+      remote: kumakey-git
       revision: main
   self:
     path: config
