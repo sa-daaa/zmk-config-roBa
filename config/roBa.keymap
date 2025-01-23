@@ -76,6 +76,22 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        ADL1: ADL1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&macro_press>, <&kp LANG_HANGEUL>;
+
+            label = "ADL1";
+        };
+
+        ADL2: ADL2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&macro_press>, <&kp LANG_HANJA>;
+
+            label = "ADL2";
+        };
     };
 
     behaviors {
@@ -154,7 +170,7 @@
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &ADL2   &trans  &ADL1       &trans  &trans                                &trans
             >;
         };
 
