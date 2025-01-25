@@ -20,14 +20,10 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl 0>;
+                <&sl MOUSE>;
 
             label = "MKP_EXIT_AML";
         };
-    };
-
-    keymap {
-        // マウスレイヤーに &mkp_exit_AML LCLK 等割り当て
     };
 };
 
