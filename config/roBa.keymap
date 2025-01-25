@@ -175,19 +175,19 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &trans           &trans    &kp LC(T)  &trans    &mo 5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(V)  &kp LC(LS(TAB))  &mkp MB1  &mkp MB3   &mkp MB2  &kp LC(TAB)
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(C)  &trans           &trans    &kp LC(W)  &trans    &trans
-&trans  &trans  &trans  &ADL2   &trans  &ADL1       &trans     &trans                                          &trans
+&trans  &trans  &trans  &trans  &trans                         &trans           &trans             &kp LC(T)  &trans    &mo 5
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(V)  &kp LC(LS(TAB))  &macro_left_click  &mkp MB3   &mkp MB2  &kp LC(TAB)
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(C)  &trans           &trans             &kp LC(W)  &trans    &trans
+&trans  &trans  &trans  &ADL2   &trans  &ADL1       &trans     &trans                                                   &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans             &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &macro_left_click  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans             &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                     &trans
             >;
         };
 
