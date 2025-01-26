@@ -75,6 +75,17 @@
 
             tap-ms = <20>;
         };
+
+        tap_dance_example: behavior_tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            bindings = <&kp A>, <&kp B>, <&kp C>;
+            parameters {
+                key_1 = <&kp A>;  // 1回タップでのキー
+                key_2 = <&kp B>;  // 2回タップでのキー
+                key_3 = <&kp C>;  // 3回タップでのキー
+                tapping-term-ms = <300>; // デフォルトのタップ間タイムアウト（ミリ秒）
+            };
+        };
     };
 
     keymap {
