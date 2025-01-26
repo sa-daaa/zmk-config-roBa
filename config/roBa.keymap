@@ -65,7 +65,7 @@
         };
 
         macro_parens: macro_parens {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             parameters = <left right>;
             bindings = <
