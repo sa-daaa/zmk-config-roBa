@@ -65,8 +65,7 @@
         };
 
         // パラメータを使って括弧をカスタマイズ可能なマクロ
-        macro_parens {
-            label = "ParensMacro";
+        mkp_exit_AML: macro_parens {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             parameters = <left right>;
@@ -75,6 +74,7 @@
                 &kp $right // 右括弧を入力
                 &kp LEFT   // 左矢印でカーソルを戻す
             >;
+            label = "ParensMacro";
         };
     };
 };
