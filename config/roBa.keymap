@@ -64,11 +64,21 @@
             label = "MKP_EXIT_AML";
         };
 
-        parentheses: parentheses {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "PARENTHESES";
+        // パラメータを使って括弧をカスタマイズ可能なマクロ
+        macro_parens {
+            label = "ParensMacro";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            parameters = <left right>;
+            bindings = <
+                &kp $left  // 左括弧を入力
+                &kp $right // 右括弧を入力
+                &kp LEFT   // 左矢印でカーソルを戻す
+            >;
+        };
+    };
+};
+
         };
     };
 
