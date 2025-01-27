@@ -85,6 +85,21 @@
 
             tap-ms = <20>;
         };
+
+        multi_tap_tab_bspc: behavior_multi_tap {
+            label = "MT_TAB_BSPC";
+            #binding-cells = <0>;
+
+            // 1回目, 2回目 それぞれの binding (キーコードなど) を指定
+            bindings = <&kp TAB>, <&kp BSPC>;
+
+            // 最大タップ回数を2回とする
+            max-taps = <2>;
+
+            // 必要に応じてタイムアウトを調整 (ミリ秒)
+            // デフォルトは 200ms くらい
+            // max-tap-interrupt-ms = <250>;
+        };
     };
 
     keymap {
