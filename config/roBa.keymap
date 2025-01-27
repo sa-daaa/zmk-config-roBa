@@ -63,7 +63,6 @@
             label = "MKP_EXIT_AML";
         };
 　　};
-};
 
     behaviors {
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
