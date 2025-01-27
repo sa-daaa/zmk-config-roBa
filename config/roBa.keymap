@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 4
@@ -68,7 +67,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <2>;
             parameters = <left right>;
-            bindings = <&kp $left &kp $right &kp LEFT>;
+            bindings = <&kp 0 &kp 1 &kp LEFT>;
             label = "ParensMacro";
         };
     };
