@@ -66,8 +66,13 @@
         macro_parens: macro_parens {
             compatible = "zmk,behavior-macro";
             #binding-cells = <2>;
-            parameters = <left right>;
-            bindings = <&kp MACRO_PLACEHOLDER &kp MACRO_PLACEHOLDER &kp LEFT>;
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
+                <&macro_press>,
+                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
+                <&macro_press>,
+                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>;
             label = "ParensMacro";
         };
     };
