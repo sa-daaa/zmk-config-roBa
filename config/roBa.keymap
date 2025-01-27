@@ -67,7 +67,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <2>;
             parameters = <left right>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_1to1 &kp MACRO_PLACEHOLDER &kp LEFT>;
+            bindings = <&kp MACRO_PLACEHOLDER &kp MACRO_PLACEHOLDER &kp LEFT>;
             label = "ParensMacro";
         };
     };
