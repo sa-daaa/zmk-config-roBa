@@ -62,17 +62,8 @@
 
             label = "MKP_EXIT_AML";
         };
-
-        my_macro: my_macro {
-　　　　　    compatible = "zmk,behavior-macro";
-　　　　　    #binding-cells = <2>;
-　　　　　    bindings = <
-　　　　　        &kp 0        /* 0番目の引数 */
-  　　　　　      &kp 1        /* 1番目の引数 */
-   　　　　　 >;
-　　　　　};
-
-        };
+　　};
+};
 
     behaviors {
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
