@@ -59,7 +59,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&sl MOUSE>;
+                <&sl 4>;
 
             label = "MKP_EXIT_AML";
         };
@@ -89,11 +89,9 @@
         multi_tap_tab_bspc: behavior_multi_tap {
             label = "MT_TAB_BSPC";
             #binding-cells = <0>;
-
             bindings = <&kp TAB>, <&kp BSPC>;
 
             max-taps = <2>;
-
             max-tap-interrupt-ms = <250>;
         };
     };
@@ -143,10 +141,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans                  &trans                                           &trans           &trans              &kp LC(T)           &trans              &mo 5
-&trans  &trans  &trans  &trans                  &trans  &trans                        &kp LC(V)  &kp LC(LS(TAB))  &mkp_exit_AML LCLK  &mkp_exit_AML MCLK  &mkp_exit_AML RCLK  &kp LC(TAB)
-&trans  &trans  &trans  &trans                  &trans  &trans                        &kp LC(C)  &trans           &trans              &kp LC(W)           &trans              &trans
-&trans  &trans  &trans  &to_layer_0 LANG_HANJA  &trans  &to_layer_0 LANG_HANGEUL      &trans     &trans                                                                       &trans
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R           &to_layer_0 T                                           &to_layer_0 Y    &to_layer_0 U      &kp LC(T)          &to_layer_0 O      &mo 5
+&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F           &to_layer_0 G  &trans                        &kp LC(V)  &kp LC(LS(TAB))  &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &kp LC(TAB)
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V           &to_layer_0 B  &trans                        &kp LC(C)  &to_layer_0 N    &mkp MB4           &kp LC(W)          &mkp MB5           &trans
+&trans         &trans         &trans         &to_layer_0 LANG_HANJA  &trans         &to_layer_0 LANG_HANGEUL      &trans     &trans                                                                    &trans
             >;
         };
 
