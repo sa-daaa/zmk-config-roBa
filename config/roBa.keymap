@@ -64,7 +64,7 @@
             label = "MKP_EXIT_AML";
         };
 
-        parenthesis: new_macro {
+        parenthesis: parenthesis {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -73,7 +73,7 @@
                 <&macro_release>,
                 <&kp LEFT_ARROW>;
 
-            label = "NEW_MACRO";
+            label = "parenthesis";
         };
     };
 
