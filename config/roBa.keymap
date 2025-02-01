@@ -68,7 +68,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>,
+                <&kp LEFT_PARENTHESIS>,
+                <&kp RIGHT_PARENTHESIS>,
                 <&macro_release>,
                 <&kp LEFT_ARROW>;
 
