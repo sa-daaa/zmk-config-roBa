@@ -70,7 +70,6 @@
             bindings =
                 <&kp LEFT_PARENTHESIS>,
                 <&kp RIGHT_PARENTHESIS>,
-                <&macro_release>,
                 <&kp LEFT_ARROW>;
 
             label = "parenthesis";
