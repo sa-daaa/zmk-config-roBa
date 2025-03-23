@@ -107,8 +107,6 @@
 &mt LEFT_SHIFT Z  &kp X         &kp C           &kp V             &kp B            &kp TAB                 &kp RIGHT_ALT    &kp N        &lt 5 M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LEFT_GUI      &kp LEFT_ALT  &kp LANGUAGE_1  &lt 6 LANGUAGE_2  &mt LCTRL SPACE  &lt 3 INT_MUHENKAN      &lt 2 BACKSPACE  &lt 1 ENTER                               &kp DEL
             >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         SYMBOLS {
