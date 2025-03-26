@@ -67,10 +67,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E      &kp R                        &kp T                                                                &kp Y        &kp U    &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D      &kp F                        &kp G            &kp ESC                            &kp KP_EQUAL     &kp H        &kp J    &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C      &kp V                        &kp B            &kp TAB                            &kp RIGHT_ALT    &kp N        &lt 5 M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
-&kp LEFT_GUI      &kp LEFT_ALT  &kp LANG1  &lt_to_layer_0 6 LANGUAGE_2  &mt LCTRL SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &lt 2 BACKSPACE  &lt 1 ENTER                               &kp DEL
+&kp Q               &kp W         &kp E      &kp R                        &kp T                                                                &kp Y        &kp U    &lt 5 I    &kp O    &kp P
+&kp A               &kp S         &kp D      &kp F                        &kp G            &kp ESC                         &kp KP_EQUAL        &kp H        &kp J    &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z    &kp X         &kp C      &kp V                        &kp B            &kp TAB                         &kp RIGHT_ALT       &kp N        &lt 5 M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
+&mt LCTRL LEFT_GUI  &kp LEFT_ALT  &kp LANG1  &lt_to_layer_0 6 LANGUAGE_2  &mt LCTRL SPACE  &lt_to_layer_0 3 BACKSPACE      &lt 2 INT_MUHENKAN  &lt 1 ENTER                               &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -87,10 +87,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS                                              &trans      &kp F7  &kp F8  &kp F9  &kp F10
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp EQUAL  &trans      &kp F4  &kp F5  &kp F6  &kp F11
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD       &kp KP_EQUAL                 &trans     &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
-&trans                      &trans           &trans           &trans           &trans           &trans                       &trans     &trans                              &trans
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS                                   &trans      &kp F7  &kp F8  &kp F9  &kp F10
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK  &kp KP_EQUAL      &kp EQUAL  &trans      &kp F4  &kp F5  &kp F6  &kp F11
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD       &kp EQUAL         &trans     &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
+&trans                      &trans           &trans           &trans           &trans           &trans            &trans     &trans                              &trans
             >;
         };
 
@@ -108,7 +108,7 @@
         MOUSE {
             bindings = <
 &to_layer_0 Q  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans         &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans         &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
 &trans         &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
 &trans         &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
