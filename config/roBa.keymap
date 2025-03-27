@@ -40,6 +40,16 @@
             bindings = <&kp LG(LS(S))>;
             key-positions = <5 6>;
         };
+
+        f2 {
+            bindings = <&kp F2>;
+            key-positions = <17 18>;
+        };
+
+        newfile {
+            bindings = <&kp LG(LS(N))>;
+            key-positions = <29 30>;
+        };
     };
 
     macros {
@@ -50,7 +60,7 @@
             label = "TO_LAYER_0";
         };
 
-mkp_exit_AML: mkp_exit_AML {
+        mkp_exit_AML: mkp_exit_AML {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
@@ -65,15 +75,15 @@ mkp_exit_AML: mkp_exit_AML {
             label = "MKP_EXIT_AML";
         };
 
-parenthesis: parenthesis {
+        parenthesis: parenthesis {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LANG_HANJA &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
             label = "parenthesis";
         };
     };
-    
- behaviors {
+
+    behaviors {
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -99,10 +109,10 @@ parenthesis: parenthesis {
 
         default_layer {
             bindings = <
-&kp Q             &kp W      &kp E      &kp R                        &kp T                                                                &kp Y        &kp U  &kp I      &kp O         &kp P
-&mt LEFT_ALT A    &kp S      &kp D      &kp F                        &kp G            &kp ESC                         &trans              &kp H        &kp J  &kp K      &kp L         &kp MINUS
-&mt LEFT_SHIFT Z  &kp X      &kp C      &kp V                        &kp B            &kp TAB                         &kp RIGHT_ALT       &kp N        &kp M  &kp COMMA  &lt 5 PERIOD  &mt RSHIFT SLASH
-&kp LEFT_GUI      &kp LCTRL  &kp LANG1  &lt_to_layer_0 6 LANGUAGE_2  &mt LCTRL SPACE  &lt_to_layer_0 3 BACKSPACE      &lt 2 INT_MUHENKAN  &lt 1 ENTER                                  &kp DEL
+&kp Q             &kp W      &kp E      &kp R             &kp T                                                     &kp Y        &kp U  &kp I      &kp O         &kp P
+&mt LEFT_ALT A    &kp S      &kp D      &kp F             &kp G            &kp ESC              &kp COLON           &kp H        &kp J  &kp K      &kp L         &kp MINUS
+&mt LEFT_SHIFT Z  &kp X      &kp C      &kp V             &kp B            &kp TAB              &kp RIGHT_ALT       &kp N        &kp M  &kp COMMA  &lt 5 PERIOD  &mt RSHIFT SLASH
+&kp LEFT_GUI      &kp LCTRL  &kp LANG1  &lt 6 LANGUAGE_2  &mt LCTRL SPACE  &lt 3 BACKSPACE      &lt 2 INT_MUHENKAN  &lt 1 ENTER                                  &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -110,19 +120,19 @@ parenthesis: parenthesis {
 
         FUNCTION {
             bindings = <
-&trans  &trans  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                              &kp LESS_THAN     &kp GREATER_THAN  &kp SLASH         &kp NON_US_BACKSLASH  &kp PIPE
-&trans  &trans  &kp DOLLAR        &kp PERCENT           &kp AMPERSAND          &trans              &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp SEMICOLON     &kp COLON             &kp QUESTION
-&trans  &trans  &kp EXCLAMATION   &kp DOUBLE_QUOTES     &kp HASH               &kp LEFT_SHIFT      &trans  &kp LEFT_BRACKET  &kp RBKT          &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES     &kp LCTRL
-&trans  &trans  &trans            &trans                &trans                 &trans              &trans  &trans                                                                      &trans
+&trans        &trans  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                              &kp LESS_THAN     &kp GREATER_THAN  &kp SLASH         &kp NON_US_BACKSLASH  &kp PIPE
+&kp LEFT_ALT  &trans  &kp DOLLAR        &kp PERCENT           &kp AMPERSAND          &trans              &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp SEMICOLON     &kp COLON             &kp QUESTION
+&trans        &trans  &kp EXCLAMATION   &kp DOUBLE_QUOTES     &kp HASH               &kp LEFT_SHIFT      &trans  &kp LEFT_BRACKET  &kp RBKT          &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES     &kp LCTRL
+&trans        &trans  &trans            &trans                &kp LCTRL              &trans              &trans  &trans                                                                      &trans
             >;
         };
 
         NUM {
             bindings = <
-&trans  &kp ASTRK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                                &kp F7  &kp F8  &kp F9  &trans  &trans
-&trans  &kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS      &kp EQUAL      &kp F4  &kp F5  &kp F6  &trans  &trans
-&trans  &kp EQUAL  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS       &kp BACKSPACE  &kp F1  &kp F2  &kp F3  &trans  &trans
-&trans  &trans     &kp KP_NUMBER_0  &trans           &trans           &trans         &trans         &trans                          &trans
+&trans  &kp ASTRK   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                                &kp F7  &kp F8  &kp F9  &trans  &trans
+&trans  &kp SLASH   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS      &kp EQUAL      &kp F4  &kp F5  &kp F6  &trans  &trans
+&trans  &kp PERIOD  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS       &kp BACKSPACE  &kp F1  &kp F2  &kp F3  &trans  &trans
+&trans  &trans      &kp KP_NUMBER_0  &trans           &trans           &trans         &trans         &trans                          &trans
             >;
         };
 
@@ -134,7 +144,7 @@ parenthesis: parenthesis {
 &trans              &trans           &trans          &trans           &trans               &trans               &trans         &trans                                                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
