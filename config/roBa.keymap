@@ -65,7 +65,15 @@ mkp_exit_AML: mkp_exit_AML {
             label = "MKP_EXIT_AML";
         };
 
-    behaviors {
+parenthesis: parenthesis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG_HANJA &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            label = "parenthesis";
+        };
+    };
+    
+behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
