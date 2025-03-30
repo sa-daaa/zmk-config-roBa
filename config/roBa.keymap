@@ -118,7 +118,7 @@
         FUNCTION {
             bindings = <
 &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                              &kp PRINTSCREEN  &trans  &kp RC(NUMBER_1)  &kp LG(LS(N))  &kp LG(LS(RIGHT_ARROW))
-&kp SEMICOLON   &kp COLON        &kp DOLLAR        &kp PERCENT           &kp AMPERSAND          &trans              &trans  &kp LG(RS(S))    &trans  &trans            &trans         &kp LG(LS(L))
+&kp SEMICOLON   &kp COLON        &kp DOLLAR        &kp PERCENT           &kp AMPERSAND          &trans              &trans  &kp LG(RS(S))    &trans  &trans            &trans         &kp LG(L)
 &kp EQUAL       &kp SLASH        &kp EXCLAMATION   &kp DOUBLE_QUOTES     &kp HASH               &kp LEFT_SHIFT      &trans  &trans           &trans  &trans            &trans         &kp LCTRL
 &kp AT_SIGN     &kp QUESTION     &kp MINUS         &trans                &kp LCTRL              &trans              &trans  &trans                                                    &kp RA(F4)
             >;
