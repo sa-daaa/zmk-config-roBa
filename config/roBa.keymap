@@ -16,21 +16,6 @@
     combos {
         compatible = "zmk,combos";
 
-        BT0 {
-            bindings = <&bt BT_SEL 0>;
-            key-positions = <28 22>;
-        };
-
-        BT1 {
-            bindings = <&bt BT_SEL 1>;
-            key-positions = <28 23>;
-        };
-
-        BT2 {
-            bindings = <&bt BT_SEL 2>;
-            key-positions = <24 28>;
-        };
-
         LOCK {
             bindings = <&kp LG(L)>;
             key-positions = <9 8>;
