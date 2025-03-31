@@ -106,10 +106,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W      &kp E      &kp R             &kp T                                                     &kp Y        &kp U    &kp I      &kp O       &kp P
-&mt LEFT_ALT A    &kp S      &kp D      &kp F             &kp G            &kp ESC              &kp EQUAL           &kp H        &kp J    &kp K      &kp L       &kp MINUS
-&mt LEFT_SHIFT Z  &kp X      &kp C      &kp V             &kp B            &kp TAB              &kp LC(Z)           &kp N        &lt 5 M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
-&kp LEFT_GUI      &kp LCTRL  &kp LANG1  &lt 6 LANGUAGE_2  &mt LCTRL SPACE  &lt 3 BACKSPACE      &lt 2 INT_MUHENKAN  &lt 1 ENTER                                  &mt RCTRL DELETE
+&kp Q         &kp W           &kp E      &kp R           &kp T                                                        &kp Y        &kp U    &kp I    &kp O            &kp P
+&kp A         &kp S           &kp D      &kp F           &kp G                &kp ESC             &kp DELETE          &kp H        &kp J    &kp K    &kp L            &kp MINUS
+&kp Z         &kp X           &kp C      &kp V           &kp B                &kp TAB             &kp RIGHT_ALT       &kp N        &lt 5 M  &kp TAB  &kp RIGHT_SHIFT  &lt 6 COMMA
+&kp LEFT_GUI  &kp LANGUAGE_2  &kp LANG1  &kp LEFT_SHIFT  &mt LCTRL BACKSPACE  &lt 3 LEFT_ALT      &lt 2 INT_MUHENKAN  &lt 1 ENTER                                     &mt RCTRL PERIOD
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -117,7 +117,7 @@
 
         FUNCTION {
             bindings = <
-&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                              &kp PRINTSCREEN  &trans  &kp RC(NUMBER_1)  &kp LG(LS(N))  &kp LG(LS(RIGHT_ARROW))
+&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                              &kp PRINTSCREEN  &trans  &kp RC(NUMBER_1)  &kp LS(LC(N))  &kp LG(LS(RIGHT_ARROW))
 &kp SEMICOLON   &kp COLON        &kp DOLLAR        &kp PERCENT           &kp AMPERSAND          &trans              &trans  &kp LG(RS(S))    &trans  &trans            &trans         &kp LG(L)
 &kp EQUAL       &kp SLASH        &kp EXCLAMATION   &kp DOUBLE_QUOTES     &kp HASH               &kp LEFT_SHIFT      &trans  &trans           &trans  &trans            &trans         &kp LCTRL
 &kp AT_SIGN     &kp QUESTION     &kp MINUS         &trans                &kp LCTRL              &trans              &trans  &trans                                                    &kp RA(F4)
@@ -146,10 +146,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q         &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                                            &to_layer_0 Y      &to_layer_0 U      &to_layer_0 I      &to_layer_0 O       &to_layer_0 P
-&to_layer_0 A         &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G      &trans                     &kp LC(V)  &to_layer_0 H      &mkp_exit_AML MB1  &mkp_exit_AML MB2  &mkp_exit_AML MB3   &to_layer_0 MINUS
-&to_layer_0 Z         &to_layer_0 X  &to_layer_0 C  &to_layer_0 V  &to_layer_0 B      &trans                     &kp LC(C)  &to_layer_0 N      &mo 5              &to_layer_0 COMMA  &to_layer_0 PERIOD  &to_layer_0 SLASH
-&to_layer_0 LEFT_GUI  &trans         &trans         &trans         &to_layer_0 LCTRL  &to_layer_0 BACKSPACE      &trans     &to_layer_0 ENTER                                                            &trans
+&to_layer_0 Q         &to_layer_0 W  &to_layer_0 E  &to_layer_0 R           &to_layer_0 T                                           &to_layer_0 Y      &to_layer_0 U  &to_layer_0 I      &to_layer_0 O      &to_layer_0 P
+&to_layer_0 A         &to_layer_0 S  &to_layer_0 D  &to_layer_0 F           &to_layer_0 G      &trans                    &kp LC(V)  &to_layer_0 H      &to_layer_0 J  &to_layer_0 K      &to_layer_0 L      &to_layer_0 MINUS
+&to_layer_0 Z         &to_layer_0 X  &to_layer_0 C  &to_layer_0 V           &to_layer_0 B      &trans                    &kp LC(C)  &to_layer_0 N      &mo 5          &mkp_exit_AML MB1  &mkp_exit_AML MB2  &mkp_exit_AML MB3
+&to_layer_0 LEFT_GUI  &trans         &trans         &to_layer_0 LEFT_SHIFT  &to_layer_0 LCTRL  &to_layer_0 LEFT_ALT      &trans     &to_layer_0 ENTER                                                       &trans
             >;
         };
 
