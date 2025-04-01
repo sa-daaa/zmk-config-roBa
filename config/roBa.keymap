@@ -118,8 +118,8 @@
         FUNCTION {
             bindings = <
 &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                              &kp PRINTSCREEN  &trans  &kp RC(NUMBER_1)  &kp LS(LC(N))  &kp LG(LS(RIGHT_ARROW))
-&kp SEMICOLON   &kp COLON        &kp DOLLAR        &kp PERCENT           &kp AMPERSAND          &trans              &trans  &kp LG(RS(S))    &trans  &trans            &trans         &kp LG(L)
-&kp EQUAL       &kp SLASH        &kp EXCLAMATION   &kp DOUBLE_QUOTES     &kp HASH               &kp LEFT_SHIFT      &trans  &trans           &trans  &trans            &trans         &kp LCTRL
+&kp SEMICOLON   &kp COLON        &kp DOLLAR        &kp PERCENT           &kp AMPERSAND          &trans              &trans  &kp LG(RS(S))    &trans  &trans            &kp LA(SEMI)   &kp LG(L)
+&kp EQUAL       &kp SLASH        &kp EXCLAMATION   &kp DOUBLE_QUOTES     &kp HASH               &kp LEFT_SHIFT      &trans  &trans           &trans  &trans            &kp LC(COLON)  &kp LCTRL
 &kp AT_SIGN     &kp QUESTION     &kp MINUS         &trans                &kp LCTRL              &trans              &trans  &trans                                                    &kp RA(F4)
             >;
         };
@@ -146,10 +146,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q         &to_layer_0 W  &to_layer_0 E  &to_layer_0 R   &to_layer_0 T                                        &to_layer_0 Y      &to_layer_0 U  &to_layer_0 I      &to_layer_0 O      &to_layer_0 P
-&to_layer_0 A         &to_layer_0 S  &to_layer_0 D  &to_layer_0 F   &to_layer_0 G    &trans           &to_layer_0 LC(V)  &to_layer_0 H      &to_layer_0 J  &to_layer_0 K      &to_layer_0 L      &to_layer_0 MINUS
-&to_layer_0 Z         &to_layer_0 X  &to_layer_0 C  &to_layer_0 V   &to_layer_0 B    &trans           &to_layer_0 RC(C)  &to_layer_0 N      &mo 5          &mkp_exit_AML MB1  &mkp_exit_AML MB2  &mkp_exit_AML MB3
-&to_layer_0 LEFT_GUI  &trans         &trans         &kp LEFT_SHIFT  &mt LCTRL SPACE  &lt 3 SPACE      &trans             &to_layer_0 ENTER                                                       &trans
+&to_layer_0 Q         &to_layer_0 W  &to_layer_0 E  &to_layer_0 R   &to_layer_0 T                                            &to_layer_0 Y      &to_layer_0 U  &to_layer_0 I      &to_layer_0 O      &to_layer_0 P
+&to_layer_0 A         &to_layer_0 S  &to_layer_0 D  &to_layer_0 F   &to_layer_0 G    &trans               &to_layer_0 LC(V)  &to_layer_0 H      &to_layer_0 J  &to_layer_0 K      &to_layer_0 L      &to_layer_0 MINUS
+&to_layer_0 Z         &to_layer_0 X  &to_layer_0 C  &to_layer_0 V   &to_layer_0 B    &trans               &to_layer_0 RC(C)  &to_layer_0 N      &mo 5          &mkp_exit_AML MB1  &mkp_exit_AML MB2  &mkp_exit_AML MB3
+&to_layer_0 LEFT_GUI  &trans         &trans         &kp LEFT_SHIFT  &mt LCTRL SPACE  &lt 3 BACKSPACE      &trans             &to_layer_0 ENTER                                                       &trans
             >;
         };
 
