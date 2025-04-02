@@ -36,14 +36,9 @@
             key-positions = <29 30>;
         };
 
-        pass1 {
+        gloon {
             bindings = <&galoon>;
             key-positions = <16 28>;
-        };
-
-        pass2 {
-            bindings = <&galoon2>;
-            key-positions = <15 27>;
         };
     };
 
