@@ -68,7 +68,7 @@
         parenthesis: parenthesis {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            bindings = <&kp LANG_HANJA &kp O &kp K &kp U &kp M &kp A &kp KP_NUMBER_0 &kp KP_NUMBER_0 &kp KP_NUMBER_4 &kp KP_NUMBER_6 &kp KP_NUMBER_4>;
             label = "parenthesis";
         };
 
@@ -76,13 +76,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LANGUAGE_2 &kp S &kp A &kp D &kp A &kp T &kp O &kp S &kp I &kp KP_NUMBER_0 &kp KP_NUMBER_6 &kp KP_NUMBER_1 &kp KP_NUMBER_2>;
-            label = "NEW_MACRO";
-        };
-
-        pass: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &kp O &kp K &kp U &kp M &kp A>;
             label = "NEW_MACRO";
         };
     };
@@ -124,10 +117,10 @@
 
         FUNCTION {
             bindings = <
-&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                              &kp PRINTSCREEN  &trans  &kp RC(NUMBER_1)  &kp LS(LC(N))  &kp LG(LS(RIGHT_ARROW))
-&kp SEMICOLON   &kp COLON        &kp DOLLAR        &kp PERCENT           &kp AMPERSAND          &trans              &trans  &kp LG(RS(S))    &trans  &trans            &kp LA(SEMI)   &kp LG(L)
-&kp EQUAL       &kp SLASH        &kp EXCLAMATION   &kp DOUBLE_QUOTES     &kp HASH               &kp LEFT_SHIFT      &trans  &trans           &trans  &trans            &kp LC(COLON)  &kp LCTRL
-&kp AT_SIGN     &kp QUESTION     &kp MINUS         &trans                &kp LCTRL              &trans              &trans  &trans                                                    &kp RA(F4)
+&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                              &kp PRINTSCREEN  &trans  &kp UP_ARROW         &kp LS(LC(N))  &kp LG(LS(RIGHT_ARROW))
+&kp SEMICOLON   &kp COLON        &kp DOLLAR        &kp PERCENT           &kp AMPERSAND          &trans              &trans  &kp LG(RS(S))    &trans  &kp DOWN_ARROW       &kp LA(SEMI)   &kp LG(L)
+&kp EQUAL       &kp SLASH        &kp EXCLAMATION   &kp DOUBLE_QUOTES     &kp HASH               &kp LEFT_SHIFT      &trans  &trans           &trans  &kp RC(KP_NUMBER_1)  &kp LC(COLON)  &kp LCTRL
+&kp AT_SIGN     &kp QUESTION     &kp MINUS         &trans                &kp LCTRL              &trans              &trans  &trans                                                       &kp RA(F4)
             >;
         };
 
