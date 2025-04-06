@@ -78,6 +78,13 @@
             bindings = <&kp LANGUAGE_2 &kp S &kp A &kp D &kp A &kp T &kp O &kp S &kp I &kp KP_NUMBER_0 &kp KP_NUMBER_6 &kp KP_NUMBER_1 &kp KP_NUMBER_2>;
             label = "NEW_MACRO";
         };
+
+        pass: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp O &kp K &kp U &kp M &kp A>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
