@@ -44,7 +44,7 @@
 
         pass {
             bindings = <&pass>;
-            key-positions = <15 27>;
+            key-positions = <27 28>;
         };
     };
 
