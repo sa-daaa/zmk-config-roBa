@@ -135,6 +135,8 @@
 &kp EQUAL       &kp SLASH        &kp EXCLAMATION   &kp DOUBLE_QUOTES     &kp HASH               &kp LEFT_SHIFT      &trans  &kp LA(PRINTSCREEN)  &trans  &kp RC(KP_NUMBER_1)  &kp LC(COLON)  &kp LCTRL
 &kp AT_SIGN     &kp QUESTION     &kp MINUS         &trans                &kp LCTRL              &trans              &trans  &trans                                                           &kp RA(F4)
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         NUM {
@@ -144,6 +146,8 @@
 &kp EQUAL  &kp PERIOD  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS           &kp BACKSPACE  &trans  &trans    &trans          &trans           &trans
 &trans     &trans      &kp KP_NUMBER_0  &trans           &trans           &kp BACKSPACE      &trans         &trans                                             &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         ARROW {
