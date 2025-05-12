@@ -142,10 +142,10 @@
 
         FUNCTION {
             bindings = <
-&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                           &kp LC(NUMBER_1)   &trans          &kp UP_ARROW         &kp LS(LC(N))    &kp LG(LS(RIGHT_ARROW))
-&kp SEMICOLON   &kp COLON        &kp DOLLAR        &kp PERCENT           &kp AMPERSAND          &trans              &kp LC(PRINTSCREEN)  &kp LA(SEMICOLON)  &kp LEFT_ARROW  &kp DOWN_ARROW       &kp RIGHT_ARROW  &kp LG(L)
-&kp EQUAL       &kp SLASH        &kp EXCLAMATION   &kp DOUBLE_QUOTES     &kp HASH               &kp LEFT_SHIFT      &kp LG(LS(S))        &kp LC(COLON)      &trans          &kp RC(KP_NUMBER_1)  &trans           &kp LCTRL
-&kp AT_SIGN     &kp QUESTION     &kp MINUS         &trans                &kp LCTRL              &trans              &trans               &trans                                                                   &kp RA(F4)
+&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                       &kp LC(NUMBER_1)   &trans          &kp UP_ARROW         &kp LS(LC(N))    &kp LG(LS(RIGHT_ARROW))
+&kp SEMICOLON   &kp COLON        &kp DOLLAR        &kp PERCENT           &kp AMPERSAND          &trans              &kp PRINTSCREEN  &kp LA(SEMICOLON)  &kp LEFT_ARROW  &kp DOWN_ARROW       &kp RIGHT_ARROW  &kp LG(L)
+&kp EQUAL       &kp SLASH        &kp EXCLAMATION   &kp DOUBLE_QUOTES     &kp HASH               &kp LEFT_SHIFT      &kp LG(LS(S))    &kp LC(COLON)      &trans          &kp RC(KP_NUMBER_1)  &trans           &kp LCTRL
+&kp AT_SIGN     &kp QUESTION     &kp MINUS         &kp LEFT_ALT          &kp LCTRL              &trans              &trans           &trans                                                                   &kp RA(F4)
             >;
 
             sensor-bindings = <&scroll_up_down>;
