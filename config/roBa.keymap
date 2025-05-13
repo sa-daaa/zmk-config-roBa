@@ -126,10 +126,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W           &kp E               &kp R           &kp T                                                     &kp Y        &kp U    &kp I      &kp O       &kp P
-&kp A               &kp S           &kp D               &kp F           &kp G            &mkp MB3             &kp DELETE          &kp H        &kp J    &kp K      &kp L       &kp MINUS
-&kp Z               &kp X           &kp C               &kp V           &kp B            &kp TAB              &kp RIGHT_ALT       &kp N        &lt 5 M  &kp COMMA  &kp PERIOD  &lt 6 QUESTION
-&mt LEFT_GUI LCTRL  &kp LANGUAGE_1  &mt LEFT_ALT LANG2  &kp LEFT_SHIFT  &mt LCTRL SPACE  &lt 3 BACKSPACE      &lt 2 INT_MUHENKAN  &lt 1 ENTER                                  &mt RCTRL SLASH
+&kp Q         &kp W           &kp E               &kp R           &kp T                                                     &kp Y     &kp U    &kp I      &kp O      &kp P
+&kp A         &kp S           &kp D               &kp F           &kp G            &mkp MB3             &kp COMMA           &kp H     &kp J    &kp K      &kp L      &kp MINUS
+&kp Z         &kp X           &kp C               &kp V           &kp B            &kp TAB              &kp PERIOD          &kp N     &lt 5 M  &mkp LCLK  &mkp RCLK  &lt 6 ENTER
+&kp LEFT_GUI  &kp LANGUAGE_1  &mt LEFT_ALT LANG2  &kp LEFT_SHIFT  &mt LCTRL SPACE  &lt 3 BACKSPACE      &lt 2 INT_MUHENKAN  &lt 1 F2                                 &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -170,10 +170,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q         &to_layer_0 W  &to_layer_0 E  &to_layer_0 R   &to_layer_0 T                                                   &to_layer_0 Y      &to_layer_0 U      &to_layer_0 I      &to_layer_0 O       &to_layer_0 P
-&to_layer_0 A         &to_layer_0 S  &to_layer_0 D  &to_layer_0 F   &to_layer_0 G    &trans               &to_layer_0 DELETE        &to_layer_0 H      &mkp_exit_AML MB1  &mkp_exit_AML MB2  &to_layer_0 L       &to_layer_0 MINUS
-&to_layer_0 Z         &to_layer_0 X  &to_layer_0 C  &to_layer_0 V   &to_layer_0 B    &to_layer_0 TAB      &to_layer_0 RIGHT_ALT     &to_layer_0 N      &mo 5              &to_layer_0 COMMA  &to_layer_0 PERIOD  &to_layer_0 QUESTION
-&to_layer_0 LEFT_GUI  &trans         &trans         &kp LEFT_SHIFT  &mt LCTRL SPACE  &lt 3 BACKSPACE      &to_layer_0 INT_MUHENKAN  &to_layer_0 ENTER                                                            &to_layer_0 SLASH
+&to_layer_0 Q         &to_layer_0 W  &to_layer_0 E  &to_layer_0 R   &to_layer_0 T                                                   &to_layer_0 Y   &to_layer_0 U  &to_layer_0 I      &to_layer_0 O      &to_layer_0 P
+&to_layer_0 A         &to_layer_0 S  &to_layer_0 D  &to_layer_0 F   &to_layer_0 G    &trans               &to_layer_0 COMMA         &to_layer_0 H   &to_layer_0 J  &to_layer_0 K      &to_layer_0 L      &to_layer_0 MINUS
+&to_layer_0 Z         &to_layer_0 X  &to_layer_0 C  &to_layer_0 V   &to_layer_0 B    &to_layer_0 TAB      &to_layer_0 PERIOD        &to_layer_0 N   &mo 5          &mkp_exit_AML MB1  &mkp_exit_AML MB2  &to_layer_0 ENTER
+&to_layer_0 LEFT_GUI  &trans         &trans         &kp LEFT_SHIFT  &mt LCTRL SPACE  &lt 3 BACKSPACE      &to_layer_0 INT_MUHENKAN  &to_layer_0 F2                                                       &to_layer_0 DELETE
             >;
         };
 
