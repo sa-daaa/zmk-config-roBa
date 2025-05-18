@@ -56,6 +56,11 @@
             bindings = <&kp SLASH>;
             key-positions = <10 11>;
         };
+
+        motonogamen {
+            bindings = <&kp LG(D)>;
+            key-positions = <20 21>;
+        };
     };
 
     macros {
@@ -136,10 +141,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W           &kp E               &kp R           &kp T                                                     &kp Y     &kp U    &kp I      &kp O      &kp P
-&kp A         &kp S           &kp D               &kp F           &kp G            &mkp MB3             &kp COMMA           &kp H     &kp J    &kp K      &kp L      &kp MINUS
-&kp Z         &kp X           &kp C               &kp V           &kp B            &kp TAB              &kp PERIOD          &kp N     &lt 5 M  &mkp LCLK  &mkp RCLK  &lt 6 ENTER
-&kp LEFT_GUI  &kp LANGUAGE_1  &mt LEFT_ALT LANG2  &kp LEFT_SHIFT  &mt LCTRL SPACE  &lt 3 BACKSPACE      &lt 2 INT_MUHENKAN  &lt 1 F2                                 &kp DEL
+&kp Q         &kp W           &kp E               &kp R           &kp T                                                        &kp Y     &kp U    &kp I      &kp O      &kp P
+&kp A         &kp S           &kp D               &kp F           &kp G            &mkp MB3                &kp DELETE          &kp H     &kp J    &kp K      &kp L      &kp MINUS
+&kp Z         &kp X           &kp C               &kp V           &kp B            &mt LEFT_SHIFT TAB      &mt RSHIFT ENTER    &kp N     &lt 5 M  &mkp LCLK  &mkp RCLK  &lt 6 COMMA
+&kp LEFT_GUI  &kp LANGUAGE_1  &mt LEFT_ALT LANG2  &kp LEFT_SHIFT  &mt LCTRL SPACE  &lt 3 BACKSPACE         &lt 2 INT_MUHENKAN  &lt 1 F2                                 &kp PERIOD
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -160,7 +165,7 @@
             bindings = <
 &kp ASTRK  &kp PLUS    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9                                    &trans  &trans              &kp UP_ARROW    &trans               &trans
 &kp FSLH   &kp MINUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS          &trans         &trans  &kp LEFT            &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans
-&kp EQUAL  &kp PERIOD  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS           &kp BACKSPACE  &trans  &kp LG(LEFT_ARROW)  &trans          &kp LG(RIGHT_ARROW)  &trans
+&kp EQUAL  &kp PERIOD  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS           &kp BACKSPACE  &trans  &kp LA(LEFT_ARROW)  &trans          &kp LA(RIGHT_ARROW)  &trans
 &trans     &trans      &kp KP_NUMBER_0  &trans           &trans           &kp BACKSPACE      &trans         &trans                                                           &trans
             >;
 
@@ -171,7 +176,7 @@
             bindings = <
 &trans        &trans  &kp F7  &kp F8  &kp F9                                    &trans    &kp RC(RS(TAB))     &kp UP_ARROW    &kp RC(TAB)          &kp LG(RS(RIGHT_ARROW))
 &kp LEFT_ALT  &trans  &kp F4  &kp F5  &kp F6  &trans             &kp PAGE_UP    &kp HOME  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END
-&kp LSHIFT    &trans  &kp F1  &kp F2  &kp F3  &kp LS(LCTRL)      &kp PAGE_DOWN  &trans    &kp LA(LEFT_ARROW)  &trans          &kp RA(RIGHT_ARROW)  &kp RIGHT_SHIFT
+&kp LSHIFT    &trans  &kp F1  &kp F2  &kp F3  &kp LS(LCTRL)      &kp PAGE_DOWN  &trans    &kp LG(LEFT_ARROW)  &trans          &kp LG(RIGHT_ARROW)  &kp RIGHT_SHIFT
 &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans             &trans         &trans                                                             &trans
             >;
 
