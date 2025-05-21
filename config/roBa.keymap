@@ -61,6 +61,16 @@
             bindings = <&kp LG(D)>;
             key-positions = <20 21>;
         };
+
+        kana {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <37 35>;
+        };
+
+        english {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <37 36>;
+        };
     };
 
     macros {
@@ -141,10 +151,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W           &kp E               &kp R           &kp T                                                        &kp Y     &kp U    &kp I      &kp O      &kp P
-&kp A         &kp S           &kp D               &kp F           &kp G            &mkp MB3                &kp DELETE          &kp H     &kp J    &kp K      &kp L      &kp MINUS
-&kp Z         &kp X           &kp C               &kp V           &kp B            &mt LEFT_SHIFT TAB      &mt RSHIFT ENTER    &kp N     &lt 5 M  &mkp LCLK  &mkp RCLK  &lt 6 COMMA
-&kp LEFT_GUI  &kp LANGUAGE_1  &mt LEFT_ALT LANG2  &kp LEFT_SHIFT  &mt LCTRL SPACE  &lt 3 BACKSPACE         &lt 2 INT_MUHENKAN  &lt 1 F2                                 &kp PERIOD
+&kp Q           &kp W           &kp E               &kp R           &kp T                                                        &kp Y                  &kp U    &kp I      &kp O      &kp P
+&mt LEFT_ALT A  &kp S           &kp D               &kp F           &kp G            &mkp MB3                &kp COMMA           &kp H                  &kp J    &kp K      &kp L      &kp MINUS
+&kp Z           &kp X           &kp C               &kp V           &kp B            &mt LEFT_SHIFT TAB      &kp PERIOD          &lt 1 N                &lt 5 M  &mkp LCLK  &mkp RCLK  &lt 6 COMMA
+&kp LEFT_GUI    &kp LANGUAGE_1  &mt LEFT_ALT LANG2  &kp LEFT_SHIFT  &mt LCTRL SPACE  &lt 3 BACKSPACE         &lt 2 INT_MUHENKAN  &mt RIGHT_SHIFT ENTER                                 &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
