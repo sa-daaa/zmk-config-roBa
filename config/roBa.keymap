@@ -62,14 +62,14 @@
             key-positions = <20 21>;
         };
 
-        kana {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <37 35>;
+        rbunkatu {
+            bindings = <&kp LG(RIGHT_ARROW)>;
+            key-positions = <20 32>;
         };
 
-        english {
-            bindings = <&kp LANGUAGE_2>;
-            key-positions = <37 36>;
+        lbukatu {
+            bindings = <&kp LG(LEFT_ARROW)>;
+            key-positions = <18 30>;
         };
     };
 
