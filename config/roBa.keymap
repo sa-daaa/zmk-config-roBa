@@ -147,10 +147,10 @@
 
         FUNCTION {
             bindings = <
-&kp COLON      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH                                       &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &kp LS(LC(N))    &kp LG(LS(RIGHT_ARROW))
-&kp SEMICOLON  &kp DOLLAR       &kp PERCENT           &kp PERCENT            &kp PIPE              &trans              &kp PRINTSCREEN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &kp RIGHT_ARROW  &kp LG(L)
-&kp EQUAL      &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &trans                &kp LEFT_SHIFT      &kp LG(LS(S))    &kp LESS_THAN     &kp GREATER_THAN   &trans  &trans           &kp LCTRL
-&kp AT_SIGN    &kp QUESTION     &kp MINUS             &kp LEFT_ALT           &trans                &trans              &trans           &trans                                                        &kp RA(F4)
+&kp COLON      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH                                       &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &kp LS(LC(N))  &kp LG(LS(RIGHT_ARROW))
+&kp SEMICOLON  &kp DOLLAR       &kp PERCENT           &kp PERCENT            &kp PIPE              &trans              &kp PRINTSCREEN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans         &kp LG(L)
+&kp EQUAL      &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &trans                &kp LEFT_SHIFT      &kp LG(LS(S))    &kp LESS_THAN     &kp GREATER_THAN   &trans  &trans         &kp LCTRL
+&kp AT_SIGN    &kp QUESTION     &kp MINUS             &kp LEFT_ALT           &trans                &trans              &trans           &trans                                                      &kp RA(F4)
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -158,10 +158,10 @@
 
         NUM {
             bindings = <
-&kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                    &trans   &kp F7  &kp F8  &kp F9  &kp F10
-&kp FSLH   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &trans         &trans         &trans   &kp F4  &kp F5  &kp F6  &kp F11
-&kp KP_N0  &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL      &kp BACKSPACE  &kp ESC  &kp F1  &kp F2  &kp F3  &kp F12
-&trans     &trans           &trans           &trans           &trans        &trans         &trans         &trans                           &trans
+&kp MINUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                    &trans   &kp F7  &kp F8  &kp F9  &kp F10
+&kp FSLH       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &trans         &trans         &trans   &kp F4  &kp F5  &kp F6  &kp F11
+&kp KP_N0      &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL      &kp BACKSPACE  &kp ESC  &kp F1  &kp F2  &kp F3  &kp F12
+&kp BACKSPACE  &trans           &trans           &trans           &trans        &trans         &trans         &trans                           &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
