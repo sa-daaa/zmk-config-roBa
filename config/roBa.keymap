@@ -142,10 +142,10 @@
 
         FUNCTION {
             bindings = <
-&kp COLON      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH                                       &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &kp LS(LC(N))  &kp LG(LS(RIGHT_ARROW))
-&kp SEMICOLON  &kp DOLLAR       &kp PERCENT           &kp PERCENT            &kp PIPE              &trans              &kp PRINTSCREEN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans         &kp LG(L)
-&kp EQUAL      &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &trans                &kp LEFT_SHIFT      &kp LG(LS(S))    &kp LESS_THAN     &kp GREATER_THAN   &trans  &trans         &kp LCTRL
-&kp AT_SIGN    &kp QUESTION     &kp MINUS             &kp LEFT_ALT           &trans                &trans              &trans           &trans                                                      &kp RA(F4)
+&kp COLON      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH                                       &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &kp LS(LC(N))      &kp LG(LS(RIGHT_ARROW))
+&kp SEMICOLON  &kp DOLLAR       &kp PERCENT           &kp PERCENT            &kp PIPE              &trans              &kp PRINTSCREEN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &kp LA(SEMICOLON)  &kp LG(L)
+&kp EQUAL      &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &trans                &kp LEFT_SHIFT      &kp LG(LS(S))    &kp LESS_THAN     &kp GREATER_THAN   &trans  &trans             &kp LCTRL
+&kp AT_SIGN    &kp QUESTION     &kp MINUS             &kp LEFT_ALT           &trans                &trans              &trans           &trans                                                          &kp RA(F4)
             >;
 
             sensor-bindings = <&scroll_up_down>;
