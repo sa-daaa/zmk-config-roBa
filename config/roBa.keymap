@@ -88,7 +88,7 @@
             bindings = <&kp TAB>, <&kp BSPC>;
 
             max-taps = <2>;
-            max-tap-interrupt-ms = <250>;
+            max-tap-interrupt-ms = <300>;
         };
     };
 
