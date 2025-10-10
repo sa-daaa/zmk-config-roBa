@@ -38,6 +38,16 @@
             bindings = <&kp LG(L)>;
             key-positions = <8 9>;
         };
+
+        migi {
+            bindings = <&kp LG(RIGHT)>;
+            key-positions = <17 29>;
+        };
+
+        hidari {
+            bindings = <&kp LG(LEFT_ARROW)>;
+            key-positions = <14 26>;
+        };
     };
 
     macros {
@@ -97,10 +107,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W    &kp E         &kp R                   &kp T                                                         &kp Y        &kp U    &kp I      &kp O    &kp P
-&kp A             &kp S    &kp D         &kp F                   &kp G             &kp ESCAPE                    &kp EQUAL     &kp H        &kp J    &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X    &kp C         &kp V                   &kp B             &kp TAB                       &parenthesis  &kp N        &lt 5 M  &kp COMMA  &kp DOT  &lt 6 SLASH
-&kp LEFT_GUI      &kp ESC  &kp LEFT_ALT  &mt LCTRL INT_MUHENKAN  &lt 3 INT_HENKAN  &mt LEFT_SHIFT BACKSPACE      &lt 1 ENTER   &lt 2 SPACE                               &kp DEL
+&kp Q             &kp W    &kp E         &kp R                   &kp T                                                        &kp Y        &kp U    &kp I      &kp O    &kp P
+&kp A             &kp S    &kp D         &kp F                   &kp G             &kp EQUAL                     &kp RIGHT    &kp H        &kp J    &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X    &kp C         &kp V                   &kp B             &kp TAB                       &kp LEFT     &kp N        &lt 5 M  &kp COMMA  &kp DOT  &lt 6 SLASH
+&kp LEFT_GUI      &kp ESC  &kp LEFT_ALT  &mt LCTRL INT_MUHENKAN  &lt 3 INT_HENKAN  &mt LEFT_SHIFT BACKSPACE      &lt 1 ENTER  &lt 2 SPACE                               &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -108,19 +118,19 @@
 
         SYMBOLS {
             bindings = <
-&kp ESCAPE  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans             &trans
-&kp TILDE   &kp DOLLAR       &kp PERCENT   &kp CARET             &trans                 &trans      &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON  &kp SINGLE_QUOTE   &kp BACKSLASH
-&kp GRAVE   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &trans                 &trans      &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON      &kp DOUBLE_QUOTES  &kp PIPE
-&trans      &trans           &trans        &trans                &trans                 &trans      &trans  &trans                                                                         &trans
+&kp GRAVE      &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH                                       &kp LESS_THAN     &kp GREATER_THAN   &trans  &kp LS(LC(N))  &trans
+&kp SEMICOLON  &kp DOLLAR        &kp PERCENT           &kp AMPERSAND          &kp PIPE       &trans              &kp PRINTSCREEN  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans         &trans
+&kp COLON      &kp EXCLAMATION   &kp DOUBLE_QUOTES     &kp HASH               &kp PERIOD     &kp EQUAL           &kp LG(LS(S))    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans         &trans
+&kp AT_SIGN    &trans            &trans                &kp LCTRL              &trans         &kp LEFT_SHIFT      &trans           &trans                                                      &kp LA(F4)
             >;
         };
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                           &trans      &kp F7  &kp F8  &kp F9  &kp F10
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &trans  &trans      &kp F4  &kp F5  &kp F6  &kp F11
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans  &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
-&trans                      &trans           &trans           &trans           &trans        &kp BACKSPACE                &trans  &trans                              &kp F13
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                    &trans      &kp F7  &kp F8  &kp F9  &kp F10
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &trans             &kp RIGHT  &trans      &kp F4  &kp F5  &kp F6  &kp F11
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &kp LEFT   &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F12
+&trans                      &trans           &trans           &trans           &trans        &kp BACKSPACE      &trans     &trans                              &kp F13
             >;
         };
 
