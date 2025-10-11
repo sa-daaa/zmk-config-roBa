@@ -48,6 +48,11 @@
             bindings = <&kp LG(LEFT_ARROW)>;
             key-positions = <14 26>;
         };
+
+        idou {
+            bindings = <&kp LG(LS(LEFT))>;
+            key-positions = <1 0>;
+        };
     };
 
     macros {
