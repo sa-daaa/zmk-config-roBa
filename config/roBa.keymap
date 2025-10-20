@@ -83,6 +83,21 @@
             label = "MKP_EXIT_AML";
         };
 
+　　　　mkp_exit_AML_delay: mkp_exit_AML_delay {
+    compatible = "zmk,behavior-macro-one-param";
+    #binding-cells = <1>;
+    bindings =
+        <&macro_press>,
+        <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
+        <&macro_pause_for_release>,
+        <&macro_release>,
+        <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
+        <&macro_tap>,
+        <&macro_wait_ms 5000>,   /* ← ここで5秒待機（単位はミリ秒） */
+        <&sl 4>;                 /* 5秒後にレイヤー4へ切り替え */
+};
+
+
         parenthesis: parenthesis {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
