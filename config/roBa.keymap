@@ -82,13 +82,6 @@
 
             label = "MKP_EXIT_AML";
         };
-
-        kakko: parenthesis {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LANG_HANJA &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
-            label = "parenthesis";
-        };
     };
 
     behaviors {
@@ -173,8 +166,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans              &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans                                         &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(LG(RIGHT)) LC(LG(LEFT))>;
         };
 
         layer_6 {
