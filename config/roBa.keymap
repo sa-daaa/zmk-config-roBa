@@ -174,7 +174,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans                                         &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(LC(RIGHT)) LG(LC(LEFT))>;
+            sensor-bindings = <&inc_dec_kp LC(LG(RIGHT)) LC(LG(LEFT))>;
         };
 
         layer_6 {
