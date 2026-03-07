@@ -1,4 +1,4 @@
 name: roBa
 build:
   settings:
-    shield-root: config
+    board-root: config
