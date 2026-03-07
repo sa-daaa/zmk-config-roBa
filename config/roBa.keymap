@@ -58,6 +58,16 @@
             bindings = <&to 2>;
             key-positions = <31 32 33>;
         };
+
+        kasomigi {
+            bindings = <&kp LC(LG(RIGHT))>;
+            key-positions = <28 29>;
+        };
+
+        kasouhidari {
+            bindings = <&kp LC(LG(LEFT_ARROW))>;
+            key-positions = <26 27>;
+        };
     };
 
     macros {
