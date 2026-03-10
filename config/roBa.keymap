@@ -133,7 +133,7 @@
 &mt LCTRL TAB  &kp LEFT_GUI  &kp LEFT_ALT  &mt LCTRL INT_MUHENKAN  &lt 3 INT_HENKAN  &mt LEFT_SHIFT BACKSPACE      &lt 1 ENTER  &lt 2 SPACE                                  &kp DEL
             >;
 
-            sensor-bindings = <&scroll_down_up>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         SYMBOLS {
