@@ -1,9 +1,8 @@
-file_format: "2"
+file_format: "1"
 id: roBa
 name: roBa
 type: shield
 url: https://github.com/kumamuk-git/zmk-config-roBa
-boards:
-  - board: seeeduino_xiao_ble
+requires: [seeeduino_xiao_ble]
 features:
   - keys
