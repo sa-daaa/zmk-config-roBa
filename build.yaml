@@ -36,6 +36,6 @@ include:
     artifact-name: roBa_dongle
 
   - board: seeeduino_xiao_ble
-    shield: roBa_R
+    shield: roBa_R_peripheral
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: roBa_R_dongle_peripheral
