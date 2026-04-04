@@ -41,8 +41,6 @@
     };
 };
 
-&xiao_serial1 {
-    status = "disabled";
 };
 
 &spi0 {
