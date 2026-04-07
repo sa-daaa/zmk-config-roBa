@@ -59,9 +59,14 @@
 };
 
 / {
-    tb_right_split: tb_right_split {
-        compatible = "zmk,input-split";
-        device = <&tb_right>;
-        input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+        tb_right_split: tb_right_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+            device = <&tb_right>;
+            input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;
+        };
     };
 };
