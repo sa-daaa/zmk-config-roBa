@@ -58,10 +58,7 @@
     };
 };
 
-/ {
-    tb_right_split: tb_right_split {
-        compatible = "zmk,input-split";
-        device = <&tb_right>;
-        input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;
-    };
+&tb_right_split {
+    device = <&tb_right>;
+    input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;
 };
