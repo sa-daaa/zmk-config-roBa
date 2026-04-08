@@ -45,7 +45,8 @@ RC(3,0) RC(3,1) RC(3,2)         RC(4,1) RC(4,2) RC(4,3) RC(4,4)   RC(4,7) RC(4,8
             layers = <5>;
             input-processors = <
                 &zip_xy_to_scroll_mapper
-                &zip_scroll_scaler 1 5
+                &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
+                &zip_scroll_scaler 1 16
             >;
         };
     };
