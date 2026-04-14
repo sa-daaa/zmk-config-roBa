@@ -42,6 +42,13 @@
             bindings = <&kp INT_HENKAN &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
             label = "NEW_MACRO";
         };
+
+        zerozero: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp N0>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -83,10 +90,10 @@
         NUM {
             display-name = "NUM";
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                           &trans  &kp F7  &kp F8  &kp F9  &trans
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &trans  &trans  &kp F4  &kp F5  &kp F6  &trans
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans  &trans  &kp F1  &kp F2  &kp F3  &trans
-&trans                      &trans           &trans           &trans           &trans        &kp BACKSPACE                &trans  &trans                          &trans
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                 &trans  &kp F7  &kp F8  &kp F9  &trans
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &zerozero          &trans  &trans  &kp F4  &kp F5  &kp F6  &trans
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &trans  &trans  &kp F1  &kp F2  &kp F3  &trans
+&trans                      &trans           &trans           &trans           &trans        &kp BACKSPACE      &trans  &trans                          &trans
             >;
         };
 
@@ -105,10 +112,10 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R             &to_layer_0 T                                                                    &to_layer_0 Y           &to_layer_0 U       &to_layer_0 I               &to_layer_0 O                &to_layer_0 P
-&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F             &to_layer_0 G           &to_layer_0 LG(UP_ARROW)        &kp LG(LC(RIGHT_ARROW))  &to_layer_0 H           &mkp MB1            &mkp MB2                    &to_layer_0 L                &to_layer_0 MINUS
-&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V             &to_layer_0 B           &to_layer_0 LG(DOWN_ARROW)      &kp LC(LG(LEFT_ARROW))   &to_layer_0 N           &lt_to_layer_0 5 M  &to_layer_0 LA(LEFT_ARROW)  &to_layer_0 LA(RIGHT_ARROW)  &to_layer_0 QUESTION
-&trans         &trans         &trans         &to_layer_0 INT_MUHENKAN  &to_layer_0 INT_HENKAN  &trans                          &lt_to_layer_0 1 ENTER   &lt_to_layer_0 2 SPACE                                                                               &to_layer_0 DELETE
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R             &to_layer_0 T                                                                          &to_layer_0 Y                  &to_layer_0 U       &to_layer_0 I               &to_layer_0 O                &to_layer_0 P
+&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F             &to_layer_0 G           &to_layer_0 LG(UP_ARROW)        &kp LG(LC(RIGHT_ARROW))        &to_layer_0 H                  &mkp MB1            &mkp MB2                    &to_layer_0 L                &to_layer_0 MINUS
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V             &to_layer_0 B           &to_layer_0 LG(DOWN_ARROW)      &kp LC(LG(LEFT_ARROW))         &to_layer_0 N                  &lt_to_layer_0 5 M  &to_layer_0 LA(LEFT_ARROW)  &to_layer_0 LA(RIGHT_ARROW)  &to_layer_0 QUESTION
+&trans         &trans         &trans         &to_layer_0 INT_MUHENKAN  &to_layer_0 INT_HENKAN  &trans                          &lt_to_layer_0 1 INT_MUHENKAN  &lt_to_layer_0 2 INT_MUHENKAN                                                                               &to_layer_0 DELETE
             >;
         };
 
