@@ -14,17 +14,22 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <14 15>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+            key-positions = <26 27>;
         };
 
         muhennkann {
             bindings = <&kakko>;
             key-positions = <13 14>;
+        };
+
+        kakko2 {
+            bindings = <&kp A>;
+            key-positions = <17 18>;
         };
     };
 
@@ -43,10 +48,10 @@
             label = "NEW_MACRO";
         };
 
-        zerozero: new_macro {
+        new_macro: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N0 &kp N0>;
+            bindings = <&kp INT_HENKAN &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp INT_HENKAN &kp LEFT>;
             label = "NEW_MACRO";
         };
     };
@@ -80,10 +85,10 @@
         FUNCTION {
             display-name = "KIGO";
             bindings = <
-&kp MINUS  &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                                        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp F4  &kp F5
-&kp SLASH  &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp ASTERISK  &kp PG_UP          &kp LG(LS(S))  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp F8     &kp F9  &kp F10
-&trans     &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp PERIOD    &kp PAGE_DOWN      &trans         &trans            &trans             &trans     &trans  &kp F11
-&trans     &trans           &trans                &trans                 &trans        &trans             &trans         &trans                                                  &kp F12
+&kp MINUS  &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                                          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &trans  &trans
+&kp SLASH  &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp ASTERISK  &kp PAGE_UP        &kp PRINTSCREEN  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans     &trans  &trans
+&kp AT     &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp PERIOD    &kp PAGE_DOWN      &kp LG(LS(S))    &trans            &trans             &trans     &trans  &trans
+&trans     &trans           &trans                &trans                 &trans        &trans             &trans           &trans                                                  &kp LA(F4)
             >;
         };
 
