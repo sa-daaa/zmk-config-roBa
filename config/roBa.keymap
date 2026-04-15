@@ -46,14 +46,14 @@
             label = "TO_LAYER_0";
         };
 
-        kakko: new_macro {
+        kakko: kakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp INT_HENKAN &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
             label = "NEW_MACRO";
         };
 
-        kakko2: new_macro {
+        kakko2: kakko2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp INT_HENKAN &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp INT_HENKAN &kp LEFT>;
