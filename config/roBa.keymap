@@ -77,7 +77,7 @@
 
         default_layer {
             display-name = "SADBACE";
-            bindings = 
+            bindings = <
 &kp Q               &kp W    &kp E         &kp R                   &kp T                                                               &kp Y        &kp U    &lt 5 I    &kp O    &kp P
 &kp A               &kp S    &kp D         &kp F                   &kp G                    &kp UP_ARROW              &kp RIGHT_ARROW  &kp H        &kp J    &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z    &kp X    &kp C         &kp V                   &kp B                    &kp DOWN_ARROW            &kp LEFT_ARROW   &kp N        &lt 5 M  &kp COMMA  &kp DOT  &kp QUESTION
@@ -89,7 +89,7 @@
 
         FUNCTION {
             display-name = "KIGO";
-            bindings = 
+            bindings = <
 &kp MINUS  &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                                           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &trans  &trans
 &kp SLASH  &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp ASTERISK  &kp PAGE_UP         &kp PRINTSCREEN  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans     &trans  &trans
 &kp AT     &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp PERIOD    &kp PAGE_DOWN       &kp LG(LS(S))    &trans            &trans             &trans     &trans  &trans
@@ -99,7 +99,7 @@
 
         NUM {
             display-name = "NUM";
-            bindings = 
+            bindings = <
 &kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                 &trans  &kp F7  &kp F8  &kp F9  &tog 0
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &trans             &trans  &trans  &kp F4  &kp F5  &kp F6  &trans
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &trans  &trans  &kp F1  &kp F2  &kp F3  &trans
@@ -109,7 +109,7 @@
 
         ARROW {
             display-name = "ARROW";
-            bindings = 
+            bindings = <
 &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -121,7 +121,7 @@
 
         MOUSE {
             display-name = "MOUSE";
-            bindings = 
+            bindings = <
 &to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R             &to_layer_0 T                                                                    &to_layer_0 Y  &to_layer_0 U       &to_layer_0 I               &to_layer_0 O                &to_layer_0 P
 &to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F             &to_layer_0 G           &to_layer_0 LG(UP_ARROW)        &kp LG(LC(RIGHT_ARROW))  &to_layer_0 H  &mkp MB1            &mkp MB2                    &to_layer_0 L                &to_layer_0 MINUS
 &to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V             &to_layer_0 B           &to_layer_0 LG(DOWN_ARROW)      &kp LC(LG(LEFT_ARROW))   &to_layer_0 N  &lt_to_layer_0 5 M  &to_layer_0 LA(LEFT_ARROW)  &to_layer_0 LA(RIGHT_ARROW)  &to_layer_0 QUESTION
@@ -133,7 +133,7 @@
 
         SCROLL {
             display-name = "SCROLL";
-            bindings = 
+            bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -143,7 +143,7 @@
 
         layer_6 {
             display-name = "BLUETOOTH";
-            bindings = 
+            bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
