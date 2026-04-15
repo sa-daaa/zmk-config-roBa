@@ -28,8 +28,13 @@
         };
 
         kakko2 {
-            bindings = <&kp A>;
+            bindings = <&kakko2>;
             key-positions = <17 18>;
+        };
+
+        kyu-kei {
+            bindings = <&kp LG(L)>;
+            key-positions = <8 9>;
         };
     };
 
@@ -48,7 +53,7 @@
             label = "NEW_MACRO";
         };
 
-        new_macro: new_macro {
+        kakko2: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp INT_HENKAN &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp INT_HENKAN &kp LEFT>;
@@ -85,10 +90,10 @@
         FUNCTION {
             display-name = "KIGO";
             bindings = <
-&kp MINUS  &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                                          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &trans  &trans
-&kp SLASH  &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp ASTERISK  &kp PAGE_UP        &kp PRINTSCREEN  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans     &trans  &trans
-&kp AT     &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp PERIOD    &kp PAGE_DOWN      &kp LG(LS(S))    &trans            &trans             &trans     &trans  &trans
-&trans     &trans           &trans                &trans                 &trans        &trans             &trans           &trans                                                  &kp LA(F4)
+&kp MINUS  &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                                           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &trans  &trans
+&kp SLASH  &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp ASTERISK  &kp PAGE_UP         &kp PRINTSCREEN  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans     &trans  &trans
+&kp AT     &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp PERIOD    &kp PAGE_DOWN       &kp LG(LS(S))    &trans            &trans             &trans     &trans  &trans
+&trans     &trans           &trans                &trans                 &trans        &kp LEFT_SHIFT      &trans           &trans                                                  &kp LA(F4)
             >;
         };
 
