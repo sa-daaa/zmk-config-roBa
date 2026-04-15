@@ -27,11 +27,6 @@
             key-positions = <13 14>;
         };
 
-        kakko2 {
-            bindings = <&kakko2>;
-            key-positions = <17 18>;
-        };
-
         kyu-kei {
             bindings = <&kp LG(L)>;
             key-positions = <8 9>;
@@ -55,13 +50,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp INT_HENKAN &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
-            label = "NEW_MACRO";
-        };
-
-        kakko2: kakko2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp INT_HENKAN &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp INT_HENKAN &kp LEFT>;
             label = "NEW_MACRO";
         };
     };
