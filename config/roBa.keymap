@@ -48,6 +48,16 @@
             bindings = <&bt BT_SEL 2>;
             key-positions = <17 18>;
         };
+
+        kasodesk {
+            bindings = <&kp LG(LC(RIGHT_ARROW))>;
+            key-positions = <16 17>;
+        };
+
+        kasodesk2 {
+            bindings = <&kp LC(LG(LEFT))>;
+            key-positions = <28 29>;
+        };
     };
 
     macros {
@@ -105,10 +115,10 @@
         default_layer {
             display-name = "SADBACE";
             bindings = <
-&kp Q             &kp W    &kp E         &kp R                   &kp T                                                               &kp Y        &kp U    &lt 5 I    &kp O    &kp P
-&kp A             &kp S    &kp D         &kp F                   &kp G                    &kp LG(LS(RIGHT))         &kp RIGHT_ARROW  &kp H        &kp J    &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X    &kp C         &kp V                   &kp B                    &kp TAB                   &kp LEFT_ARROW   &kp N        &lt 5 M  &kp COMMA  &kp DOT  &lt 6 QUESTION
-&kp LCTRL         &kp ESC  &kp LEFT_GUI  &mt LCTRL INT_MUHENKAN  &mt LEFT_ALT INT_HENKAN  &mt LSHIFT BACKSPACE      &lt 1 ENTER      &lt 2 SPACE                               &mt RSHIFT DELETE
+&kp Q             &kp W      &kp E         &kp R                   &kp T                                                               &kp Y        &kp U    &lt 5 I    &kp O    &kp P
+&kp A             &kp S      &kp D         &kp F                   &kp G                    &kp LG(LS(RIGHT))         &kp RIGHT_ARROW  &kp H        &kp J    &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V                   &kp B                    &kp TAB                   &kp LEFT_ARROW   &kp N        &lt 5 M  &kp COMMA  &kp DOT  &lt 6 QUESTION
+&kp LCTRL         &lt 3 ESC  &kp LEFT_GUI  &mt LCTRL INT_MUHENKAN  &mt LEFT_ALT INT_HENKAN  &mt LSHIFT BACKSPACE      &lt 1 ENTER      &lt 2 SPACE                               &mt RSHIFT DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -141,10 +151,10 @@
         ARROW {
             display-name = "ARROW";
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans    &kp UP_ARROW  &trans     &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans    &trans        &trans     &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -153,10 +163,10 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R             &to_layer_0 T                                                                 &to_layer_0 Y           &to_layer_0 LC(C)   &to_layer_0 LC(V)           &to_layer_0 O                &to_layer_0 P
-&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F             &to_layer_0 G           &to_layer_0 LG(DOWN)          &kp LG(LC(RIGHT))       &to_layer_0 H           &mkp_exit_AML MB1   &mkp_exit_AML MB2           &to_layer_0 L                &to_layer_0 MINUS
-&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V             &to_layer_0 B           &to_layer_0 LG(UP_ARROW)      &kp LG(LC(LEFT))        &to_layer_0 N           &lt_to_layer_0 5 M  &to_layer_0 LA(LEFT_ARROW)  &to_layer_0 LA(RIGHT_ARROW)  &to_layer_0 QUESTION
-&trans         &trans         &trans         &to_layer_0 INT_MUHENKAN  &to_layer_0 INT_HENKAN  &to_layer_0 BACKSPACE         &lt_to_layer_0 1 ENTER  &lt_to_layer_0 2 SPACE                                                                               &to_layer_0 DELETE
+&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R             &to_layer_0 T                                                                  &to_layer_0 Y           &to_layer_0 LC(C)   &to_layer_0 LC(V)           &to_layer_0 O                &to_layer_0 P
+&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F             &to_layer_0 G           &to_layer_0 LG(LS(RIGHT))      &kp LG(LC(RIGHT))       &to_layer_0 H           &mkp_exit_AML MB1   &mkp_exit_AML MB2           &to_layer_0 L                &to_layer_0 MINUS
+&to_layer_0 Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V             &to_layer_0 B           &to_layer_0 LG(UP_ARROW)       &kp LG(LC(LEFT))        &to_layer_0 N           &lt_to_layer_0 5 M  &to_layer_0 LA(LEFT_ARROW)  &to_layer_0 LA(RIGHT_ARROW)  &to_layer_0 QUESTION
+&trans         &trans         &trans         &to_layer_0 INT_MUHENKAN  &to_layer_0 INT_HENKAN  &to_layer_0 BACKSPACE          &lt_to_layer_0 1 ENTER  &lt_to_layer_0 2 SPACE                                                                               &to_layer_0 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
