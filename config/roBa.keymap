@@ -127,10 +127,10 @@
         FUNCTION {
             display-name = "KIGO";
             bindings = <
-&kp MINUS  &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                                   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &trans  &trans
-&kp SLASH  &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp ASTERISK  &kp PRINTSCREEN      &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans     &trans  &trans
-&kp AT     &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp PERIOD    &kp EQUAL            &trans  &trans            &trans             &trans     &trans  &trans
-&trans     &trans           &trans                &trans                 &trans        &kp LEFT_SHIFT       &trans  &trans                                                  &kp LA(F4)
+&kp COLON      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                                   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &trans  &trans
+&kp SEMICOLON  &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp ASTERISK  &kp PRINTSCREEN      &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans     &trans  &trans
+&kp AT         &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp PERIOD    &kp EQUAL            &trans  &trans            &trans             &trans     &trans  &trans
+&trans         &trans           &trans                &trans                 &trans        &kp LEFT_SHIFT       &trans  &trans                                                  &kp LA(F4)
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
