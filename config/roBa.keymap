@@ -53,6 +53,11 @@
             bindings = <&kp LC(LG(LEFT))>;
             key-positions = <28 29>;
         };
+
+        gaemnido {
+            bindings = <&kp LG(LS(LEFT_ARROW))>;
+            key-positions = <4 14>;
+        };
     };
 
     macros {
@@ -124,7 +129,7 @@
             bindings = <
 &kp COLON      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                                  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &trans  &trans
 &kp SEMICOLON  &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp ASTERISK  &kp LG(LS(S))       &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans     &trans  &trans
-&kp AT         &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp PERIOD    &kp EQUAL           &trans  &trans            &trans             &trans     &trans  &trans
+&kp AT         &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp PERIOD    &kp EQUAL           &trans  &kp LG(LS(N))     &trans             &trans     &trans  &trans
 &trans         &trans           &trans                &trans                 &trans        &kp LEFT_SHIFT      &trans  &trans                                                  &kp LA(F4)
             >;
 
