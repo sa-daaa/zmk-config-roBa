@@ -129,7 +129,7 @@
             bindings = <
 &kp COLON      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                                  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &trans  &trans
 &kp SEMICOLON  &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp ASTERISK  &kp LG(LS(S))       &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans     &trans  &trans
-&kp AT         &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp PERIOD    &kp EQUAL           &trans  &kp LG(LS(N))     &trans             &trans     &trans  &trans
+&kp AT         &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp PERIOD    &kp EQUAL           &trans  &kp LS(LC(N))     &trans             &trans     &trans  &trans
 &trans         &trans           &trans                &trans                 &trans        &kp LEFT_SHIFT      &trans  &trans                                                  &kp LA(F4)
             >;
 
@@ -163,10 +163,10 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&to_layer_0 Q      &to_layer_0 W  &to_layer_0 E         &to_layer_0 R             &to_layer_0 T                                                     &to_layer_0 Y  &kp LC(C)           &to_layer_0 LC(V)           &to_layer_0 O                &to_layer_0 P
-&to_layer_0 A      &to_layer_0 S  &to_layer_0 D         &to_layer_0 F             &to_layer_0 G           &to_layer_0 LG(LS(RIGHT))      &kp RIGHT  &to_layer_0 H  &mkp MB1            &mkp_exit_AML MB2           &to_layer_0 L                &to_layer_0 MINUS
-&to_layer_0 Z      &to_layer_0 X  &to_layer_0 C         &to_layer_0 V             &to_layer_0 B           &to_layer_0 LG(UP_ARROW)       &kp LEFT   &to_layer_0 N  &lt_to_layer_0 5 M  &to_layer_0 LA(LEFT_ARROW)  &to_layer_0 LA(RIGHT_ARROW)  &to_layer_0 QUESTION
-&to_layer_0 LCTRL  &kp ESCAPE     &to_layer_0 LEFT_GUI  &to_layer_0 INT_MUHENKAN  &to_layer_0 INT_HENKAN  &to_layer_0 BACKSPACE          &trans     &trans                                                                                      &to_layer_0 DELETE
+&to_layer_0 Q      &to_layer_0 W  &to_layer_0 E         &to_layer_0 R             &to_layer_0 T                                                                  &to_layer_0 Y           &kp LC(C)           &to_layer_0 LC(V)           &to_layer_0 O                &to_layer_0 P
+&to_layer_0 A      &to_layer_0 S  &to_layer_0 D         &to_layer_0 F             &to_layer_0 G           &to_layer_0 LG(LS(RIGHT))      &kp RIGHT               &to_layer_0 H           &mkp MB1            &mkp_exit_AML MB2           &to_layer_0 L                &to_layer_0 MINUS
+&to_layer_0 Z      &to_layer_0 X  &to_layer_0 C         &to_layer_0 V             &to_layer_0 B           &to_layer_0 LG(UP_ARROW)       &kp LEFT                &to_layer_0 N           &lt_to_layer_0 5 M  &to_layer_0 LA(LEFT_ARROW)  &to_layer_0 LA(RIGHT_ARROW)  &to_layer_0 QUESTION
+&to_layer_0 LCTRL  &kp ESCAPE     &to_layer_0 LEFT_GUI  &to_layer_0 INT_MUHENKAN  &to_layer_0 INT_HENKAN  &to_layer_0 BACKSPACE          &lt_to_layer_0 1 RCTRL  &lt_to_layer_0 2 RCTRL                                                                               &to_layer_0 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
