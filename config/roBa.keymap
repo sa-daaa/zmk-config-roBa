@@ -63,6 +63,11 @@
             bindings = <&kp LG(LS(S))>;
             key-positions = <22 23>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <0 1>;
+        };
     };
 
     macros {
@@ -123,7 +128,7 @@
 &kp Q             &kp W      &kp E         &kp R                   &kp T                                                               &kp Y        &kp U    &lt 5 I    &kp O    &kp P
 &kp A             &kp S      &kp D         &kp F                   &kp G                    &kp UP_ARROW              &kp RIGHT_ARROW  &kp H        &kp J    &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z  &kp X      &kp C         &kp V                   &kp B                    &kp DOWN                  &kp LEFT_ARROW   &kp N        &lt 5 M  &kp COMMA  &kp DOT  &lt 6 SLASH
-&lt 3 TAB         &lt 3 ESC  &kp LEFT_GUI  &mt LCTRL INT_MUHENKAN  &mt LEFT_ALT INT_HENKAN  &mt LSHIFT BACKSPACE      &lt 1 ENTER      &lt 2 SPACE                               &mt RSHIFT DELETE
+&kp TAB           &lt 3 ESC  &kp LEFT_GUI  &mt LCTRL INT_MUHENKAN  &mt LEFT_ALT INT_HENKAN  &mt LSHIFT BACKSPACE      &lt 1 ENTER      &lt 2 SPACE                               &mt RSHIFT DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -142,10 +147,10 @@
         NUM {
             display-name = "NUM";
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                          &trans  &kp F7  &kp F8  &kp F9  &tog 0
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &trans             &kp PRINTSCREEN  &trans  &kp F4  &kp F5  &kp F6  &trans
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &kp LG(LS(S))    &trans  &kp F1  &kp F2  &kp F3  &trans
-&kp EQUAL                   &trans           &kp PERIOD       &trans           &trans        &kp BACKSPACE      &trans           &trans                          &trans
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                    &trans  &kp F7  &kp F8  &kp F9  &tog 0
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &trans             &kp RIGHT  &trans  &kp F4  &kp F5  &kp F6  &trans
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &kp LEFT   &trans  &kp F1  &kp F2  &kp F3  &trans
+&kp EQUAL                   &trans           &kp PERIOD       &trans           &trans        &kp BACKSPACE      &trans     &trans                          &trans
             >;
         };
 
@@ -164,10 +169,10 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&to_layer_0 Q      &to_layer_0 W  &to_layer_0 E         &to_layer_0 R             &to_layer_0 T                                                                  &to_layer_0 Y           &kp LC(C)           &to_layer_0 LC(V)           &to_layer_0 O                &to_layer_0 P
-&to_layer_0 A      &to_layer_0 S  &to_layer_0 D         &to_layer_0 F             &to_layer_0 G           &to_layer_0 LG(LS(RIGHT))      &kp RIGHT               &to_layer_0 H           &mkp MB1            &mkp_exit_AML MB2           &to_layer_0 L                &to_layer_0 MINUS
-&to_layer_0 Z      &to_layer_0 X  &to_layer_0 C         &to_layer_0 V             &to_layer_0 B           &to_layer_0 LG(UP_ARROW)       &kp LEFT                &to_layer_0 N           &lt_to_layer_0 5 M  &to_layer_0 LA(LEFT_ARROW)  &to_layer_0 LA(RIGHT_ARROW)  &to_layer_0 QUESTION
-&to_layer_0 LCTRL  &kp ESCAPE     &to_layer_0 LEFT_GUI  &to_layer_0 INT_MUHENKAN  &to_layer_0 INT_HENKAN  &to_layer_0 BACKSPACE          &lt_to_layer_0 1 RCTRL  &lt_to_layer_0 2 RCTRL                                                                               &to_layer_0 DELETE
+&to_layer_0 Q    &to_layer_0 W       &to_layer_0 E         &to_layer_0 R  &to_layer_0 T                                                                  &to_layer_0 Y           &kp LC(C)           &to_layer_0 LC(V)           &to_layer_0 O                &to_layer_0 P
+&to_layer_0 A    &to_layer_0 S       &to_layer_0 D         &to_layer_0 F  &to_layer_0 G           &to_layer_0 LG(LS(RIGHT))      &kp RIGHT               &to_layer_0 H           &mkp MB1            &mkp_exit_AML MB2           &to_layer_0 L                &to_layer_0 MINUS
+&to_layer_0 Z    &to_layer_0 X       &to_layer_0 C         &to_layer_0 V  &to_layer_0 B           &to_layer_0 LG(UP_ARROW)       &kp LEFT                &to_layer_0 N           &lt_to_layer_0 5 M  &to_layer_0 LA(LEFT_ARROW)  &to_layer_0 LA(RIGHT_ARROW)  &to_layer_0 QUESTION
+&to_layer_0 TAB  &to_layer_0 ESCAPE  &to_layer_0 LEFT_GUI  &kp LCTRL      &to_layer_0 INT_HENKAN  &to_layer_0 BACKSPACE          &lt_to_layer_0 1 RCTRL  &lt_to_layer_0 2 RCTRL                                                                               &to_layer_0 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
