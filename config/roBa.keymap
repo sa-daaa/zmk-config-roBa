@@ -66,7 +66,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <0 1>;
+            key-positions = <25 26>;
         };
     };
 
@@ -125,10 +125,10 @@
         default_layer {
             display-name = "SADBACE";
             bindings = <
-&kp Q             &kp W      &kp E         &kp R                   &kp T                                                               &kp Y        &kp U    &lt 5 I    &kp O    &kp P
-&kp A             &kp S      &kp D         &kp F                   &kp G                    &kp UP_ARROW              &kp RIGHT_ARROW  &kp H        &kp J    &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V                   &kp B                    &kp DOWN                  &kp LEFT_ARROW   &kp N        &lt 5 M  &kp COMMA  &kp DOT  &lt 6 SLASH
-&kp TAB           &lt 3 ESC  &kp LEFT_GUI  &mt LCTRL INT_MUHENKAN  &mt LEFT_ALT INT_HENKAN  &mt LSHIFT BACKSPACE      &lt 1 ENTER      &lt 2 SPACE                               &mt RSHIFT DELETE
+&kp Q             &kp W      &kp E    &kp R                      &kp T                                                               &kp Y        &kp U    &lt 5 I    &kp O    &kp P
+&kp A             &kp S      &kp D    &kp F                      &kp G                    &kp UP_ARROW              &kp RIGHT_ARROW  &kp H        &kp J    &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X      &kp C    &kp V                      &kp B                    &kp DOWN                  &kp LEFT_ARROW   &kp N        &lt 5 M  &kp COMMA  &kp DOT  &lt 6 SLASH
+&kp LCTRL         &lt 3 ESC  &kp TAB  &mt LEFT_GUI INT_MUHENKAN  &mt LEFT_ALT INT_HENKAN  &mt LSHIFT BACKSPACE      &lt 1 ENTER      &lt 2 SPACE                               &mt RSHIFT DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -137,20 +137,20 @@
         FUNCTION {
             display-name = "KIGO";
             bindings = <
-&kp COLON      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                                  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &trans  &trans
-&kp SEMICOLON  &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp ASTERISK  &kp PAGE_UP         &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans     &trans  &kp UNDERSCORE
-&kp AT         &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp PERIOD    &kp PAGE_DOWN       &trans  &kp LS(LC(N))     &trans             &trans     &trans  &kp QMARK
-&kp EQUAL      &trans           &trans                &trans                 &trans        &kp LEFT_SHIFT      &trans  &trans                                                  &kp LA(F4)
+&kp COLON      &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                                    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &trans  &trans
+&kp SEMICOLON  &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp ASTERISK  &kp PAGE_UP         &kp HOME  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans     &trans  &kp UNDERSCORE
+&kp AT         &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp PERIOD    &kp PAGE_DOWN       &kp END   &kp LS(LC(N))     &trans             &trans     &trans  &kp QMARK
+&kp EQUAL      &trans           &trans                &trans                 &trans        &kp LEFT_SHIFT      &trans    &trans                                                  &kp LA(F4)
             >;
         };
 
         NUM {
             display-name = "NUM";
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                    &trans  &kp F7  &kp F8  &kp F9  &tog 0
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &trans             &kp RIGHT  &trans  &kp F4  &kp F5  &kp F6  &trans
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &kp LEFT   &trans  &kp F1  &kp F2  &kp F3  &trans
-&kp EQUAL                   &trans           &kp PERIOD       &trans           &trans        &kp BACKSPACE      &trans     &trans                          &trans
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                    &kp F7  &kp F8  &kp F9  &kp F10  &tog 0
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &trans             &kp RIGHT  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL          &kp LEFT   &kp F1  &kp F2  &kp F3  &kp F12  &trans
+&kp EQUAL                   &trans           &kp PERIOD       &kp LEFT_GUI     &kp LEFT_ALT  &kp BACKSPACE      &trans     &trans                           &trans
             >;
         };
 
@@ -169,10 +169,10 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&to_layer_0 Q    &to_layer_0 W       &to_layer_0 E         &to_layer_0 R  &to_layer_0 T                                                                  &to_layer_0 Y           &kp LC(C)           &to_layer_0 LC(V)           &to_layer_0 O                &to_layer_0 P
-&to_layer_0 A    &to_layer_0 S       &to_layer_0 D         &to_layer_0 F  &to_layer_0 G           &to_layer_0 LG(LS(RIGHT))      &kp RIGHT               &to_layer_0 H           &mkp MB1            &mkp_exit_AML MB2           &to_layer_0 L                &to_layer_0 MINUS
-&to_layer_0 Z    &to_layer_0 X       &to_layer_0 C         &to_layer_0 V  &to_layer_0 B           &to_layer_0 LG(UP_ARROW)       &kp LEFT                &to_layer_0 N           &lt_to_layer_0 5 M  &to_layer_0 LA(LEFT_ARROW)  &to_layer_0 LA(RIGHT_ARROW)  &to_layer_0 QUESTION
-&to_layer_0 TAB  &to_layer_0 ESCAPE  &to_layer_0 LEFT_GUI  &kp LCTRL      &to_layer_0 INT_HENKAN  &to_layer_0 BACKSPACE          &lt_to_layer_0 1 RCTRL  &lt_to_layer_0 2 RCTRL                                                                               &to_layer_0 DELETE
+&to_layer_0 Q  &to_layer_0 W       &to_layer_0 E    &to_layer_0 R             &to_layer_0 T                                                                  &to_layer_0 Y           &kp LC(C)           &to_layer_0 LC(V)           &to_layer_0 O                &to_layer_0 P
+&to_layer_0 A  &to_layer_0 S       &to_layer_0 D    &to_layer_0 F             &to_layer_0 G           &to_layer_0 LG(LS(RIGHT))      &kp RIGHT               &to_layer_0 H           &mkp MB1            &mkp_exit_AML MB2           &to_layer_0 L                &to_layer_0 MINUS
+&to_layer_0 Z  &to_layer_0 X       &to_layer_0 C    &to_layer_0 V             &to_layer_0 B           &to_layer_0 LG(UP_ARROW)       &kp LEFT                &to_layer_0 N           &lt_to_layer_0 5 M  &to_layer_0 LA(LEFT_ARROW)  &to_layer_0 LA(RIGHT_ARROW)  &to_layer_0 QUESTION
+&kp LCTRL      &to_layer_0 ESCAPE  &to_layer_0 TAB  &to_layer_0 INT_MUHENKAN  &to_layer_0 INT_HENKAN  &to_layer_0 BACKSPACE          &lt_to_layer_0 1 RCTRL  &lt_to_layer_0 2 RCTRL                                                                               &to_layer_0 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
