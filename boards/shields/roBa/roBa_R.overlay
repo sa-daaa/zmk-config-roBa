@@ -29,6 +29,10 @@
                 &zip_xy_to_scroll_mapper
                 &zip_scroll_scaler 1 5
             >;
+         };
+         gesture {
+            layers = <7>;
+            input-processors = <&zip_mouse_gesture>;
         };
     };
 
