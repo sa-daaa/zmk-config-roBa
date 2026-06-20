@@ -224,16 +224,16 @@
             >;
         };
     };
+};
 
-    &zip_mouse_gesture {
-        stroke-size = <300>;
-        enable-eager-mode;
-        idle-timeout-ms = <150>;
-        gesture-cooldown-ms = <300>;
+&zip_mouse_gesture {
+    stroke-size = <300>;
+    enable-eager-mode;
+    idle-timeout-ms = <150>;
+    gesture-cooldown-ms = <300>;
 
-        task_view  { pattern = <GESTURE_UP>;    bindings = <&kp LG(TAB)>; };
-        show_desk  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(D)>;   };
-        vdesk_prev { pattern = <GESTURE_LEFT>;  bindings = <&kp LG(LC(LEFT))>;  };
-        vdesk_next { pattern = <GESTURE_RIGHT>; bindings = <&kp LG(LC(RIGHT))>; };
-    };
+    task_view  { pattern = <GESTURE_UP>;    bindings = <&kp LG(TAB)>; };
+    show_desk  { pattern = <GESTURE_DOWN>;  bindings = <&kp LG(D)>;   };
+    vdesk_prev { pattern = <GESTURE_LEFT>;  bindings = <&kp LG(LC(LEFT))>;  };
+    vdesk_next { pattern = <GESTURE_RIGHT>; bindings = <&kp LG(LC(RIGHT))>; };
 };
