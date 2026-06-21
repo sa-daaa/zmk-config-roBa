@@ -90,8 +90,31 @@
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&to 0>;
-
             label = "TO_LAYER1";
+        };
+
+        to_layer2: to_layer2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&to 2>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&to 0>;
+            label = "TO_LAYER2";
+        };
+
+        to_layer3: to_layer3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&to 3>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&to 0>;
+            label = "TO_LAYER3";
         };
 
         kakko: kakko {
