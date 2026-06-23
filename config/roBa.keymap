@@ -279,7 +279,7 @@
 
     show_desk {
         pattern = <GESTURE_DOWN>;
-        bindings = <&kp LG(tab)>;
+        bindings = <&kp LG(TAB)>;
     };
 
     vdesk_prev {
