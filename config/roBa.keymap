@@ -268,7 +268,7 @@
             >;
         };
 
-        layer_8 {
+        GESTURE1 {
             display-name = "GESTURE_L8";
             bindings = < 
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
@@ -278,7 +278,7 @@
             >;
         };
 
-        layer_9 {
+        GESTURE2 {
             display-name = "GESTURE_L9";
             bindings = < 
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
