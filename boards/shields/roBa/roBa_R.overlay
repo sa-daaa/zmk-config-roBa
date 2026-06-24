@@ -2,11 +2,9 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
 #include "roBa.dtsi"
-
 &default_transform {
     col-offset = <6>;
 };
-
 &kscan0 {
     col-gpios
         = <&xiao_d 10 GPIO_ACTIVE_HIGH>
@@ -16,33 +14,38 @@
         , <&gpio0 10 GPIO_ACTIVE_HIGH>
         ;
 };
-
 / {
     trackball_listener {
-    status = "okay";
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-    input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT &zip_temp_layer 4 5000>;
-    scroller {
-        layers = <5>;
-        input-processors = <
-            &zip_xy_to_scroll_mapper
-            &zip_scroll_scaler 1 5
-        >;
+        status = "okay";
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT &zip_temp_layer 4 5000>;
+        scroller {
+            layers = <5>;
+            input-processors = <
+                &zip_xy_to_scroll_mapper
+                &zip_scroll_scaler 1 5
+            >;
+        };
+        gesture {
+            layers = <7>;
+            input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
+        };
+        gesture_l8 {
+            layers = <8>;
+            input-processors = <&zip_mouse_gesture_l8 &zip_xy_scaler 0 1>;
+        };
+        gesture_l9 {
+            layers = <9>;
+            input-processors = <&zip_mouse_gesture_l9 &zip_xy_scaler 0 1>;
+        };
     };
-    gesture {
-        layers = <7>;
-        input-processors = <&zip_mouse_gesture &zip_xy_scaler 0 1>;
-    };
-};
-
     /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
         require-prior-idle-ms = <350>;
     };
 };
-
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
@@ -60,9 +63,7 @@
         };
     };
 };
-
 &xiao_serial { status = "disabled"; };
-
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
