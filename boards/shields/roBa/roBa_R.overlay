@@ -33,11 +33,11 @@
         };
         gesture_l8 {
             layers = <8>;
-            input-processors = <&zip_mouse_gesture_l8 &zip_xy_scaler 0 1>;
+            input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT &zip_mouse_gesture_l8 &zip_xy_scaler 0 1>;
         };
         gesture_l9 {
             layers = <9>;
-            input-processors = <&zip_mouse_gesture_l9 &zip_xy_scaler 0 1>;
+            input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT &zip_mouse_gesture_l9 &zip_xy_scaler 0 1>;
         };
     };
     /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
