@@ -173,6 +173,25 @@
         };
     };
 
+    layer_listeners {
+        compatible = "zmk,layer-listeners";
+
+        gesture_on_l7 {
+            layers = <7>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+
+        gesture_on_l8 {
+            layers = <8>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+
+        gesture_on_l9 {
+            layers = <9>;
+            bindings = <&mouse_gesture_on &mouse_gesture_off>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -214,7 +233,7 @@
 
         ARROW {
             display-name = "ARROW";
-            bindings = <
+            bindings = < 
 &kp LC(HOME)  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp LC(END)                       &trans       &kp LA(LEFT_ARROW)  &kp UP_ARROW  &kp LA(RIGHT_ARROW)  &trans
 &kp HOME      &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END      &trans       &trans  &kp PAGE_UP  &kp LEFT            &kp DOWN      &kp RIGHT            &kp PAGE_DOWN
 &kp LS(HOME)  &trans           &trans          &trans           &kp LS(END)  &kp TAB      &trans  &trans       &kp LC(PAGE_UP)     &trans        &kp LC(PAGE_DOWN)    &trans
@@ -226,7 +245,7 @@
 
         MOUSE {
             display-name = "MOUSE";
-            bindings = <
+            bindings = < 
 &to_layer_0 Q  &to_layer_0 W       &to_layer_0 E         &to_layer_0 R             &to_layer_0 T                                                        &kp LC(A)      &kp LC(C)           &to_layer_0 LC(V)       &to_layer_0 O       &to_layer_0 P
 &to_layer_0 A  &to_layer_0 S       &to_layer_0 D         &to_layer_0 F             &to_layer_0 G  &to_layer_0 LG(LS(RIGHT))      &to_layer_0 LA(RIGHT)  &to_layer_0 H  &mkp MB1            &mkp_exit_AML MB2       &to_layer_0 L       &to_layer_0 MINUS
 &to_layer_0 Z  &to_layer_0 X       &to_layer_0 C         &to_layer_0 V             &to_layer_0 B  &to_layer_0 TAB                &to_layer_0 LA(LEFT)   &to_layer_0 N  &lt_to_layer_0 5 M  &lt_to_layer_0 7 COMMA  &to_layer_0 PERIOD  &to_layer_0 QUESTION
@@ -248,7 +267,7 @@
 
         layer_6 {
             display-name = "BLUETOOTH";
-            bindings = <
+            bindings = < 
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &trans
@@ -260,7 +279,7 @@
 
         GESTURE {
             display-name = "GESTURE";
-            bindings = <
+            bindings = < 
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -270,7 +289,7 @@
 
         GESTURE1 {
             display-name = "GESTURE_L8";
-            bindings = <
+            bindings = < 
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -280,7 +299,7 @@
 
         GESTURE2 {
             display-name = "GESTURE_L9";
-            bindings = <
+            bindings = < 
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -293,7 +312,6 @@
 &zip_mouse_gesture {
     stroke-size = <300>;
     enable-eager-mode;
-    always-active;
     idle-timeout-ms = <150>;
     gesture-cooldown-ms = <300>;
 
@@ -327,25 +345,10 @@
         idle-timeout-ms = <150>;
         gesture-cooldown-ms = <300>;
 
-        select_all {
-            pattern = <GESTURE_UP>;
-            bindings = <&kp LC(A)>;
-        };
-
-        undo {
-            pattern = <GESTURE_DOWN>;
-            bindings = <&kp LC(Z)>;
-        };
-
-        copy {
-            pattern = <GESTURE_LEFT>;
-            bindings = <&kp LC(C)>;
-        };
-
-        paste {
-            pattern = <GESTURE_RIGHT>;
-            bindings = <&kp LC(V)>;
-        };
+        select_all { pattern = <GESTURE_UP>;    bindings = <&kp LC(A)>; };
+        undo       { pattern = <GESTURE_DOWN>;  bindings = <&kp LC(Z)>; };
+        copy       { pattern = <GESTURE_LEFT>;  bindings = <&kp LC(C)>; };
+        paste      { pattern = <GESTURE_RIGHT>; bindings = <&kp LC(V)>; };
     };
 
     zip_mouse_gesture_l9: zip_mouse_gesture_l9 {
@@ -356,24 +359,9 @@
         idle-timeout-ms = <150>;
         gesture-cooldown-ms = <300>;
 
-        zoom_in {
-            pattern = <GESTURE_UP>;
-            bindings = <&kp LC(PLUS)>;
-        };
-
-        zoom_out {
-            pattern = <GESTURE_DOWN>;
-            bindings = <&kp LC(MINUS)>;
-        };
-
-        go_back {
-            pattern = <GESTURE_LEFT>;
-            bindings = <&kp LA(LEFT)>;
-        };
-
-        go_forward {
-            pattern = <GESTURE_RIGHT>;
-            bindings = <&kp LA(RIGHT)>;
-        };
+        zoom_in    { pattern = <GESTURE_UP>;    bindings = <&kp LC(PLUS)>;  };
+        zoom_out   { pattern = <GESTURE_DOWN>;  bindings = <&kp LC(MINUS)>; };
+        go_back    { pattern = <GESTURE_LEFT>;  bindings = <&kp LA(LEFT)>;  };
+        go_forward { pattern = <GESTURE_RIGHT>; bindings = <&kp LA(RIGHT)>; };
     };
 };
