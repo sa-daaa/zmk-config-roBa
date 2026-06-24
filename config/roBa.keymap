@@ -289,11 +289,11 @@
 
     vdesk_prev {
         pattern = <GESTURE_LEFT>;
-        bindings = <&kp LG(LC(LEFT))>;
+        bindings = <&kp LG(LC(RIGHT))>;
     };
 
     vdesk_next {
         pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LG(LC(RIGHT))>;
+        bindings = <&kp LG(LC(LEFT))>;
     };
 };
