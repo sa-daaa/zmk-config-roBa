@@ -246,10 +246,10 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&to_layer_0 Q  &to_layer_0 W       &to_layer_0 E         &to_layer_0 R             &to_layer_0 T                                                    &kp LC(A)           &kp LC(C)           &to_layer_0 LC(V)       &to_layer_0 O            &to_layer_0 P
-&to_layer_0 A  &to_layer_0 S       &to_layer_0 D         &to_layer_0 F             &to_layer_0 G  &to_layer_0 LG(LS(RIGHT))      &to_layer_0 RIGHT  &to_layer_0 H       &mkp MB1            &mkp_exit_AML MB2       &to_layer_0 L            &to_layer_0 MINUS
-&to_layer_0 Z  &to_layer_0 X       &to_layer_0 C         &to_layer_0 V             &to_layer_0 B  &to_layer_0 TAB                &to_layer_0 LEFT   &lt_to_layer_0 5 N  &lt_to_layer_0 8 M  &lt_to_layer_0 7 COMMA  &lt_to_layer_0 9 PERIOD  &to_layer_0 QUESTION
-&kp LCTRL      &to_layer_0 ESCAPE  &to_layer_0 LEFT_GUI  &to_layer_0 INT_MUHENKAN  &to_layer3     &to_layer_0 BACKSPACE          &to_layer1         &to_layer2                                                                               &to_layer_0 DELETE
+&to_layer_0 Q  &to_layer_0 W       &to_layer_0 E         &to_layer_0 R             &to_layer_0 T                                                    &kp LC(A)      &kp LC(C)           &to_layer_0 LC(V)       &to_layer_0 O            &to_layer_0 P
+&to_layer_0 A  &to_layer_0 S       &to_layer_0 D         &to_layer_0 F             &to_layer_0 G  &to_layer_0 LG(LS(RIGHT))      &to_layer_0 RIGHT  &to_layer_0 H  &mkp MB1            &mkp_exit_AML MB2       &to_layer_0 L            &to_layer_0 MINUS
+&to_layer_0 Z  &to_layer_0 X       &to_layer_0 C         &to_layer_0 V             &to_layer_0 B  &to_layer_0 TAB                &to_layer_0 LEFT   &to_layer_0 N  &lt_to_layer_0 8 M  &lt_to_layer_0 7 COMMA  &lt_to_layer_0 9 PERIOD  &lt_to_layer_0 5 QUESTION
+&kp LCTRL      &to_layer_0 ESCAPE  &to_layer_0 LEFT_GUI  &to_layer_0 INT_MUHENKAN  &to_layer3     &to_layer_0 BACKSPACE          &to_layer1         &to_layer2                                                                          &to_layer_0 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
