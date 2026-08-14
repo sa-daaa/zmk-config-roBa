@@ -10,17 +10,22 @@ manifest:
       url-base: https://github.com/kot149
     - name: ssbb
       url-base: https://github.com/ssbb
+    - name: cormoran
+      url-base: https://github.com/cormoran
   projects:
+    # ZMK: DYA Studio 用カスタム RPC サブシステム付き cormoran fork（ZMK v4/Zephyr 4.1）
     - name: zmk
-      remote: zmkfirmware
-      revision: v0.3-branch
+      remote: cormoran
+      revision: main+dya
       import: app/west.yml
+    # zmk-0.4: badjeff driver の ZMK v4/Zephyr 4.1 対応ブランチ（compatible文字列・Kconfig名は main と同一）
     - name: zmk-pmw3610-driver
       remote: badjeff
-      revision: main
+      revision: zmk-0.4
+    # v1.0.0 は古く Zephyr 4.x 未対応。ZMK main(Zephyr4.x)対応済みの最新版に更新
     - name: prospector-zmk-module
       remote: t-ogura
-      revision: v1.0.0
+      revision: v2.2.2
       path: modules/prospector-zmk-module
     - name: zmk-mouse-gesture
       remote: kot149
@@ -28,5 +33,29 @@ manifest:
     - name: zmk-listeners
       remote: ssbb
       revision: v1
+    # DYA Studio モジュール（すべて cormoran リポジトリ、main+dyaと同じmain追従）
+    - name: zmk-module-ble-management
+      remote: cormoran
+      revision: main
+    - name: zmk-module-battery-history
+      remote: cormoran
+      revision: main
+    - name: zmk-module-settings-rpc
+      remote: cormoran
+      revision: main
+    - name: zmk-module-runtime-input-processor
+      remote: cormoran
+      revision: main
+    - name: zmk-feature-custom-settings
+      remote: cormoran
+      revision: main
+    - name: zmk-feature-runtime-macro
+      remote: cormoran
+      revision: main
+      import: true
+    - name: zmk-feature-runtime-combo
+      remote: cormoran
+      revision: main
+      import: true
   self:
     path: config
