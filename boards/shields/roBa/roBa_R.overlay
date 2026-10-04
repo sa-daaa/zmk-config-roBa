@@ -85,3 +85,10 @@
         y-input-code = <INPUT_REL_Y>;
     };
 };
+
+// runtime-input-processor の scroll 既定値は 1/60。zip_scroll_scaler 1 10 と重なり
+// 1/600 になってスクロールがカクつくため、等倍にして従来の 1/10 のみを効かせる。
+&scroll_runtime_input_processor {
+    scale-multiplier = <1>;
+    scale-divisor = <1>;
+};
