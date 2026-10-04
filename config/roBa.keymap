@@ -248,7 +248,7 @@
             bindings = <
 &to_layer_0 Q    &to_layer_0 W  &to_layer_0 E  &to_layer_0 R             &to_layer_0 T                                                &to_layer_0 A  &kp LC(C)           &to_layer_0 LC(V)       &to_layer_0 O            &to_layer_0 P
 &to_layer_0 A    &to_layer_0 S  &to_layer_0 D  &to_layer_0 F             &to_layer_0 G  &to_layer_0 ESCAPE         &to_layer_0 RIGHT  &to_layer_0 H  &to_layer_0 J       &to_layer_0 K           &to_layer_0 L            &mkp LCLK
-&to_layer_0 Z    &to_layer_0 X  &to_layer_0 C  &to_layer_0 V             &to_layer_0 B  &to_layer_0 TAB            &to_layer_0 LEFT   &to_layer_0 N  &lt_to_layer_0 8 M  &lt_to_layer_0 7 COMMA  &lt_to_layer_0 9 PERIOD  &to_layer_0 SLASH
+&to_layer_0 Z    &to_layer_0 X  &to_layer_0 C  &to_layer_0 V             &to_layer_0 B  &to_layer_0 TAB            &to_layer_0 LEFT   &to_layer_0 N  &lt_to_layer_0 8 M  &lt_to_layer_0 7 COMMA  &lt_to_layer_0 9 PERIOD  &lt_to_layer_0 5 SLASH
 &to_layer_0 TAB  &kp LEFT_GUI   &kp LCTRL      &to_layer_0 INT_MUHENKAN  &to_layer3     &to_layer_0 BACKSPACE      &to_layer1         &to_layer2                                                                          &to_layer_0 DELETE
             >;
 
