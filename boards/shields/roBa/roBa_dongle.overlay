@@ -68,6 +68,15 @@
     };
 };
 
+// ポインタにほんの少しだけ慣性をつける（素早く弾いたときだけ、短い余韻で止まる）
+&mouse_runtime_input_processor {
+    inertia-enabled;
+    inertia-threshold = <40>;
+    inertia-decay-percent = <30>;
+    inertia-normal-max-output = <15>;
+    inertia-fast-threshold = <0>;
+};
+
 // runtime-input-processor の scroll 既定値は 1/60。zip_scroll_scaler と重なるため等倍にする
 &scroll_runtime_input_processor {
     scale-multiplier = <1>;
