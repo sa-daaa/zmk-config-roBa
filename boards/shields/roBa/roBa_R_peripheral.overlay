@@ -3,6 +3,9 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include "roBa.dtsi"
 #include <input/processors.dtsi>
+#include <behaviors/battery_history_request.dtsi>
+
+&xiao_serial { status = "disabled"; };
 
 &default_transform {
     col-offset = <6>;
